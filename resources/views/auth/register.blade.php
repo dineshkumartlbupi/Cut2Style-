@@ -1,98 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Sign Up - Cut2Style</title>
-    <link href="{{asset('assets/css/login/bootstrap-icons/font/bootstrap-icons.min.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/css/login/feather-webfont/dist/feather-icons.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/css/login/simplebar/dist/simplebar.min.css')}}" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('assets/css/login/theme.min.css')}}">
+<x-guest-layout>
+    <head>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    </head>
+    <form method="POST" action="{{ route('register') }}">
+        @csrf
 
-    <link rel="icon" href="{{asset('assets/images/favicon/cropped-fevicon-32x32.png')}}" sizes="32x32" />
-    <link rel="icon" href="{{asset('assets/images/favicon/cropped-fevicon-192x192.png')}}" sizes="192x192" />
-    <link rel="apple-touch-icon" href="{{asset('assets/images/favicon/cropped-fevicon-180x180.png')}}" />
-    <meta name="msapplication-TileImage" content="{{asset('assets/images/favicon/cropped-fevicon-270x270.png')}}" />
-</head>
-<body>
-    <main>
-        <!-- section -->
-        <section class="my-lg-14 my-8">
-            <!-- container -->
-            <div class="container">
-                <!-- row -->
-                <div class="row justify-content-center align-items-center">
-                    <!-- col -->
-                    <div class="col-12 col-md-6 col-lg-4 text-center">
-                        <a href="/">
-                            <span class="display-block py-5 pb-5"
-                                style="display: block;">
-                                <img src="{{asset('assets/images/logo.png')}}" width="196"
-                                    alt="cut2style" class="d-inline-block align-text-top"
-                                    style="padding: 4px 6px;border-radius: 5px;margin: 0 auto;">
-                            </span>
-                        </a>
-                        <div class="mb-lg-9 mb-5">
-                            <h1 class="mb-1 h2 fw-bold">Sign Up</h1>
-                        </div>
-                        <!-- form -->
-                        <form name="loginFrm" class="needs-validation" method="post">
-                            <div class="row g-3">
-                                <!-- col -->
-                                <div class="col-12">
-                                    <!-- input -->
-                                    <label for="formSignupName" class="form-label visually-hidden">Name</label>
-                                    <input type="text" name="name" class="form-control" id="formSignupName"
-                                        placeholder="Name" required />
-                                    <div class="invalid-feedback">Please enter name.</div>
-                                </div>
-                                <div class="col-12">
-                                    <!-- input -->
-                                    <label for="formSignupEmail" class="form-label visually-hidden">Email
-                                        address</label>
-                                    <input type="email" name="email" class="form-control" id="formSignupEmail"
-                                        placeholder="Email" required />
-                                    <div class="invalid-feedback">Please enter email.</div>
-                                </div>
-                                <div class="col-12">
-                                    <!-- input -->
-                                    <label for="formSignuprole" class="form-label visually-hidden">role
-                                        address</label>
-                                    <select type="email" name="email" class="form-control" id="formSignuprole"
-                                        placeholder="role" required >
-                                        <option value="" selected disabled>Select Role</option>
-                                        <option value="Admin">Admin</option>
-                                        <option value="Vendor">Vendor</option>
-                                        <option value="User">User</option>
-                                    </select>
-                                    <div class="invalid-feedback">Please select role.</div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="password-field position-relative">
-                                        <label for="formSignupPassword"
-                                            class="form-label visually-hidden">Password</label>
-                                        <div class="password-field position-relative">
-                                            <input type="password" name="password" class="form-control fakePassword"
-                                                id="formSignupPassword" placeholder="*****" required />
-                                            <span><i class="bi bi-eye-slash passwordToggler"></i></span>
-                                            <div class="invalid-feedback">Please enter password.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- btn -->
-                                <div class="col-12 d-grid"><button type="submit" class="btn btn-primary">Login</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <script src="{{asset('assets/js/libs/bootstrap/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{asset('assets/js/libs/simplebar/simplebar.min.js')}}"></script>
-    <script src="{{asset('assets/js/theme.min.js')}}"></script>
-    <script src="{{asset('assets/js/vendors/password.js')}}"></script>
-    <script src="{{asset('assets/js/vendors/validation.js')}}"></script>
-</body>
-</html>
+        <!-- Role -->
+        <div class="mt-4">
+            <x-input-label for="role" :value="__('Role')" />
+            <select name="role" id="role" required class="block w-full mt-1">
+                <option value="">Select Role</option>
+                <option value="Admin">Admin</option>
+                <option value="User">User</option>
+                <option value="Vendor">Vendor</option>
+            </select>
+            <x-input-error :messages="$errors->get('role')" class="mt-2" />
+        </div>
+
+        <!-- Gender -->
+        <div class="mt-4">
+            <x-input-label for="gender" :value="__('Gender')" />
+            <select name="gender" id="gender" required class="block w-full mt-1">
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <x-input-error :messages="$errors->get('gender')" class="mt-2" />
+        </div>
+
+        <!-- Name -->
+        <div class="mt-4">
+            <x-input-label for="name" :value="__('Name')" />
+            <x-text-input id="name" class="block w-full mt-1" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
+            <x-input-error :messages="$errors->get('name')" class="mt-2" />
+        </div>
+
+        <!-- Email Address -->
+        <div class="mt-4">
+            <x-input-label for="email" :value="__('Email')" />
+            <x-text-input id="email" class="block w-full mt-1" type="email" name="email" :value="old('email')" required autocomplete="username" />
+            <x-input-error :messages="$errors->get('email')" class="mt-2" />
+        </div>
+
+        <!-- Password -->
+        <div class="mt-4">
+            <x-input-label for="password" :value="__('Password')" />
+            <x-text-input id="password" class="block w-full mt-1"
+                          type="password"
+                          name="password"
+                          required autocomplete="new-password" />
+            <x-input-error :messages="$errors->get('password')" class="mt-2" />
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="mt-4">
+            <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
+            <x-text-input id="password_confirmation" class="block w-full mt-1"
+                          type="password"
+                          name="password_confirmation" required autocomplete="new-password" />
+            <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
+        </div>
+
+        <div class="flex items-center justify-end mt-4">
+            <a class="text-sm text-gray-600 underline rounded-md hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
+                {{ __('Already registered?') }}
+            </a>
+
+            <x-primary-button class="ms-4">
+                {{ __('Register') }}
+            </x-primary-button>
+        </div>
+    </form>
+</x-guest-layout>
