@@ -1,277 +1,2614 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en-US" class="no-js no-svg">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&amp;family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('assets/css/ajax/font-awesome/4.7.0/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/libs.bundle.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/theme.bundle.css')}}">
+    <script>
+        (function (html) { html.className = html.className.replace(/\bno-js\b/, 'js') })(document.documentElement);
+    </script>
+    <title>CUT2STYLE</title>
+    <meta name='robots' content='noindex, nofollow' />
+    <style>
+        img:is([sizes="auto" i], [sizes^="auto," i]) {
+            contain-intrinsic-size: 3000px 1500px
+        }
+    </style>
+    <link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+    <link href='https://fonts.gstatic.com/' crossorigin rel='preconnect' />
+    <link rel="alternate" type="application/rss+xml" title="CUT2STYLE &raquo; Feed"
+        href="https://demo.cut2style.com/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="CUT2STYLE &raquo; Comments Feed"
+        href="https://demo.cut2style.com/comments/feed/" />
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/demo.cut2style.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.2" } };
+        /*! This file is auto-generated */
+        !function (i, n) { var o, s, e; function c(e) { try { var t = { supportTests: e, timestamp: (new Date).valueOf() }; sessionStorage.setItem(o, JSON.stringify(t)) } catch (e) { } } function p(e, t, n) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data), r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data)); return t.every(function (e, t) { return e === r[t] }) } function u(e, t, n) { switch (t) { case "flag": return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"); case "emoji": return !n(e, "\ud83d\udc26\u200d\u2b1b", "\ud83d\udc26\u200b\u2b1b") }return !1 } function f(e, t, n) { var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"), a = r.getContext("2d", { willReadFrequently: !0 }), o = (a.textBaseline = "top", a.font = "600 32px Arial", {}); return e.forEach(function (e) { o[e] = t(a, e, n) }), o } function t(e) { var t = i.createElement("script"); t.src = e, t.defer = !0, i.head.appendChild(t) } "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = { everything: !0, everythingExceptFlag: !0 }, e = new Promise(function (e) { i.addEventListener("DOMContentLoaded", e, { once: !0 }) }), new Promise(function (t) { var n = function () { try { var e = JSON.parse(sessionStorage.getItem(o)); if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests } catch (e) { } return null }(); if (!n) { if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try { var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));", r = new Blob([e], { type: "text/javascript" }), a = new Worker(URL.createObjectURL(r), { name: "wpTestEmojiSupports" }); return void (a.onmessage = function (e) { c(n = e.data), a.terminate(), t(n) }) } catch (e) { } c(n = f(s, u, p)) } t(n) }).then(function (e) { for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]); n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function () { n.DOMReady = !0 } }).then(function () { return e }).then(function () { var e; n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji))) })) }((window, document), window._wpemojiSettings);
+        /* ]]> */
+    </script>
+    <style id='wp-emoji-styles-inline-css' type='text/css'>
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 0.07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
 
-        <title>Laravel</title>
+        @media only screen and (max-width: 600px) {
+            .gallery-cell {
+                width: 100% !important;
+            }
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
+            .testimonial-quote {
+                font-size: 13px;
+            }
 
-        <!-- Styles / Scripts -->
-        @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
-            @vite(['resources/css/app.css', 'resources/js/app.js'])
-        @else
-            <style>
-                /*! tailwindcss v4.0.7 | MIT License | https://tailwindcss.com */@layer theme{:root,:host{--font-sans:'Instrument Sans',ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--font-serif:ui-serif,Georgia,Cambria,"Times New Roman",Times,serif;--font-mono:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--color-red-50:oklch(.971 .013 17.38);--color-red-100:oklch(.936 .032 17.717);--color-red-200:oklch(.885 .062 18.334);--color-red-300:oklch(.808 .114 19.571);--color-red-400:oklch(.704 .191 22.216);--color-red-500:oklch(.637 .237 25.331);--color-red-600:oklch(.577 .245 27.325);--color-red-700:oklch(.505 .213 27.518);--color-red-800:oklch(.444 .177 26.899);--color-red-900:oklch(.396 .141 25.723);--color-red-950:oklch(.258 .092 26.042);--color-orange-50:oklch(.98 .016 73.684);--color-orange-100:oklch(.954 .038 75.164);--color-orange-200:oklch(.901 .076 70.697);--color-orange-300:oklch(.837 .128 66.29);--color-orange-400:oklch(.75 .183 55.934);--color-orange-500:oklch(.705 .213 47.604);--color-orange-600:oklch(.646 .222 41.116);--color-orange-700:oklch(.553 .195 38.402);--color-orange-800:oklch(.47 .157 37.304);--color-orange-900:oklch(.408 .123 38.172);--color-orange-950:oklch(.266 .079 36.259);--color-amber-50:oklch(.987 .022 95.277);--color-amber-100:oklch(.962 .059 95.617);--color-amber-200:oklch(.924 .12 95.746);--color-amber-300:oklch(.879 .169 91.605);--color-amber-400:oklch(.828 .189 84.429);--color-amber-500:oklch(.769 .188 70.08);--color-amber-600:oklch(.666 .179 58.318);--color-amber-700:oklch(.555 .163 48.998);--color-amber-800:oklch(.473 .137 46.201);--color-amber-900:oklch(.414 .112 45.904);--color-amber-950:oklch(.279 .077 45.635);--color-yellow-50:oklch(.987 .026 102.212);--color-yellow-100:oklch(.973 .071 103.193);--color-yellow-200:oklch(.945 .129 101.54);--color-yellow-300:oklch(.905 .182 98.111);--color-yellow-400:oklch(.852 .199 91.936);--color-yellow-500:oklch(.795 .184 86.047);--color-yellow-600:oklch(.681 .162 75.834);--color-yellow-700:oklch(.554 .135 66.442);--color-yellow-800:oklch(.476 .114 61.907);--color-yellow-900:oklch(.421 .095 57.708);--color-yellow-950:oklch(.286 .066 53.813);--color-lime-50:oklch(.986 .031 120.757);--color-lime-100:oklch(.967 .067 122.328);--color-lime-200:oklch(.938 .127 124.321);--color-lime-300:oklch(.897 .196 126.665);--color-lime-400:oklch(.841 .238 128.85);--color-lime-500:oklch(.768 .233 130.85);--color-lime-600:oklch(.648 .2 131.684);--color-lime-700:oklch(.532 .157 131.589);--color-lime-800:oklch(.453 .124 130.933);--color-lime-900:oklch(.405 .101 131.063);--color-lime-950:oklch(.274 .072 132.109);--color-green-50:oklch(.982 .018 155.826);--color-green-100:oklch(.962 .044 156.743);--color-green-200:oklch(.925 .084 155.995);--color-green-300:oklch(.871 .15 154.449);--color-green-400:oklch(.792 .209 151.711);--color-green-500:oklch(.723 .219 149.579);--color-green-600:oklch(.627 .194 149.214);--color-green-700:oklch(.527 .154 150.069);--color-green-800:oklch(.448 .119 151.328);--color-green-900:oklch(.393 .095 152.535);--color-green-950:oklch(.266 .065 152.934);--color-emerald-50:oklch(.979 .021 166.113);--color-emerald-100:oklch(.95 .052 163.051);--color-emerald-200:oklch(.905 .093 164.15);--color-emerald-300:oklch(.845 .143 164.978);--color-emerald-400:oklch(.765 .177 163.223);--color-emerald-500:oklch(.696 .17 162.48);--color-emerald-600:oklch(.596 .145 163.225);--color-emerald-700:oklch(.508 .118 165.612);--color-emerald-800:oklch(.432 .095 166.913);--color-emerald-900:oklch(.378 .077 168.94);--color-emerald-950:oklch(.262 .051 172.552);--color-teal-50:oklch(.984 .014 180.72);--color-teal-100:oklch(.953 .051 180.801);--color-teal-200:oklch(.91 .096 180.426);--color-teal-300:oklch(.855 .138 181.071);--color-teal-400:oklch(.777 .152 181.912);--color-teal-500:oklch(.704 .14 182.503);--color-teal-600:oklch(.6 .118 184.704);--color-teal-700:oklch(.511 .096 186.391);--color-teal-800:oklch(.437 .078 188.216);--color-teal-900:oklch(.386 .063 188.416);--color-teal-950:oklch(.277 .046 192.524);--color-cyan-50:oklch(.984 .019 200.873);--color-cyan-100:oklch(.956 .045 203.388);--color-cyan-200:oklch(.917 .08 205.041);--color-cyan-300:oklch(.865 .127 207.078);--color-cyan-400:oklch(.789 .154 211.53);--color-cyan-500:oklch(.715 .143 215.221);--color-cyan-600:oklch(.609 .126 221.723);--color-cyan-700:oklch(.52 .105 223.128);--color-cyan-800:oklch(.45 .085 224.283);--color-cyan-900:oklch(.398 .07 227.392);--color-cyan-950:oklch(.302 .056 229.695);--color-sky-50:oklch(.977 .013 236.62);--color-sky-100:oklch(.951 .026 236.824);--color-sky-200:oklch(.901 .058 230.902);--color-sky-300:oklch(.828 .111 230.318);--color-sky-400:oklch(.746 .16 232.661);--color-sky-500:oklch(.685 .169 237.323);--color-sky-600:oklch(.588 .158 241.966);--color-sky-700:oklch(.5 .134 242.749);--color-sky-800:oklch(.443 .11 240.79);--color-sky-900:oklch(.391 .09 240.876);--color-sky-950:oklch(.293 .066 243.157);--color-blue-50:oklch(.97 .014 254.604);--color-blue-100:oklch(.932 .032 255.585);--color-blue-200:oklch(.882 .059 254.128);--color-blue-300:oklch(.809 .105 251.813);--color-blue-400:oklch(.707 .165 254.624);--color-blue-500:oklch(.623 .214 259.815);--color-blue-600:oklch(.546 .245 262.881);--color-blue-700:oklch(.488 .243 264.376);--color-blue-800:oklch(.424 .199 265.638);--color-blue-900:oklch(.379 .146 265.522);--color-blue-950:oklch(.282 .091 267.935);--color-indigo-50:oklch(.962 .018 272.314);--color-indigo-100:oklch(.93 .034 272.788);--color-indigo-200:oklch(.87 .065 274.039);--color-indigo-300:oklch(.785 .115 274.713);--color-indigo-400:oklch(.673 .182 276.935);--color-indigo-500:oklch(.585 .233 277.117);--color-indigo-600:oklch(.511 .262 276.966);--color-indigo-700:oklch(.457 .24 277.023);--color-indigo-800:oklch(.398 .195 277.366);--color-indigo-900:oklch(.359 .144 278.697);--color-indigo-950:oklch(.257 .09 281.288);--color-violet-50:oklch(.969 .016 293.756);--color-violet-100:oklch(.943 .029 294.588);--color-violet-200:oklch(.894 .057 293.283);--color-violet-300:oklch(.811 .111 293.571);--color-violet-400:oklch(.702 .183 293.541);--color-violet-500:oklch(.606 .25 292.717);--color-violet-600:oklch(.541 .281 293.009);--color-violet-700:oklch(.491 .27 292.581);--color-violet-800:oklch(.432 .232 292.759);--color-violet-900:oklch(.38 .189 293.745);--color-violet-950:oklch(.283 .141 291.089);--color-purple-50:oklch(.977 .014 308.299);--color-purple-100:oklch(.946 .033 307.174);--color-purple-200:oklch(.902 .063 306.703);--color-purple-300:oklch(.827 .119 306.383);--color-purple-400:oklch(.714 .203 305.504);--color-purple-500:oklch(.627 .265 303.9);--color-purple-600:oklch(.558 .288 302.321);--color-purple-700:oklch(.496 .265 301.924);--color-purple-800:oklch(.438 .218 303.724);--color-purple-900:oklch(.381 .176 304.987);--color-purple-950:oklch(.291 .149 302.717);--color-fuchsia-50:oklch(.977 .017 320.058);--color-fuchsia-100:oklch(.952 .037 318.852);--color-fuchsia-200:oklch(.903 .076 319.62);--color-fuchsia-300:oklch(.833 .145 321.434);--color-fuchsia-400:oklch(.74 .238 322.16);--color-fuchsia-500:oklch(.667 .295 322.15);--color-fuchsia-600:oklch(.591 .293 322.896);--color-fuchsia-700:oklch(.518 .253 323.949);--color-fuchsia-800:oklch(.452 .211 324.591);--color-fuchsia-900:oklch(.401 .17 325.612);--color-fuchsia-950:oklch(.293 .136 325.661);--color-pink-50:oklch(.971 .014 343.198);--color-pink-100:oklch(.948 .028 342.258);--color-pink-200:oklch(.899 .061 343.231);--color-pink-300:oklch(.823 .12 346.018);--color-pink-400:oklch(.718 .202 349.761);--color-pink-500:oklch(.656 .241 354.308);--color-pink-600:oklch(.592 .249 .584);--color-pink-700:oklch(.525 .223 3.958);--color-pink-800:oklch(.459 .187 3.815);--color-pink-900:oklch(.408 .153 2.432);--color-pink-950:oklch(.284 .109 3.907);--color-rose-50:oklch(.969 .015 12.422);--color-rose-100:oklch(.941 .03 12.58);--color-rose-200:oklch(.892 .058 10.001);--color-rose-300:oklch(.81 .117 11.638);--color-rose-400:oklch(.712 .194 13.428);--color-rose-500:oklch(.645 .246 16.439);--color-rose-600:oklch(.586 .253 17.585);--color-rose-700:oklch(.514 .222 16.935);--color-rose-800:oklch(.455 .188 13.697);--color-rose-900:oklch(.41 .159 10.272);--color-rose-950:oklch(.271 .105 12.094);--color-slate-50:oklch(.984 .003 247.858);--color-slate-100:oklch(.968 .007 247.896);--color-slate-200:oklch(.929 .013 255.508);--color-slate-300:oklch(.869 .022 252.894);--color-slate-400:oklch(.704 .04 256.788);--color-slate-500:oklch(.554 .046 257.417);--color-slate-600:oklch(.446 .043 257.281);--color-slate-700:oklch(.372 .044 257.287);--color-slate-800:oklch(.279 .041 260.031);--color-slate-900:oklch(.208 .042 265.755);--color-slate-950:oklch(.129 .042 264.695);--color-gray-50:oklch(.985 .002 247.839);--color-gray-100:oklch(.967 .003 264.542);--color-gray-200:oklch(.928 .006 264.531);--color-gray-300:oklch(.872 .01 258.338);--color-gray-400:oklch(.707 .022 261.325);--color-gray-500:oklch(.551 .027 264.364);--color-gray-600:oklch(.446 .03 256.802);--color-gray-700:oklch(.373 .034 259.733);--color-gray-800:oklch(.278 .033 256.848);--color-gray-900:oklch(.21 .034 264.665);--color-gray-950:oklch(.13 .028 261.692);--color-zinc-50:oklch(.985 0 0);--color-zinc-100:oklch(.967 .001 286.375);--color-zinc-200:oklch(.92 .004 286.32);--color-zinc-300:oklch(.871 .006 286.286);--color-zinc-400:oklch(.705 .015 286.067);--color-zinc-500:oklch(.552 .016 285.938);--color-zinc-600:oklch(.442 .017 285.786);--color-zinc-700:oklch(.37 .013 285.805);--color-zinc-800:oklch(.274 .006 286.033);--color-zinc-900:oklch(.21 .006 285.885);--color-zinc-950:oklch(.141 .005 285.823);--color-neutral-50:oklch(.985 0 0);--color-neutral-100:oklch(.97 0 0);--color-neutral-200:oklch(.922 0 0);--color-neutral-300:oklch(.87 0 0);--color-neutral-400:oklch(.708 0 0);--color-neutral-500:oklch(.556 0 0);--color-neutral-600:oklch(.439 0 0);--color-neutral-700:oklch(.371 0 0);--color-neutral-800:oklch(.269 0 0);--color-neutral-900:oklch(.205 0 0);--color-neutral-950:oklch(.145 0 0);--color-stone-50:oklch(.985 .001 106.423);--color-stone-100:oklch(.97 .001 106.424);--color-stone-200:oklch(.923 .003 48.717);--color-stone-300:oklch(.869 .005 56.366);--color-stone-400:oklch(.709 .01 56.259);--color-stone-500:oklch(.553 .013 58.071);--color-stone-600:oklch(.444 .011 73.639);--color-stone-700:oklch(.374 .01 67.558);--color-stone-800:oklch(.268 .007 34.298);--color-stone-900:oklch(.216 .006 56.043);--color-stone-950:oklch(.147 .004 49.25);--color-black:#000;--color-white:#fff;--spacing:.25rem;--breakpoint-sm:40rem;--breakpoint-md:48rem;--breakpoint-lg:64rem;--breakpoint-xl:80rem;--breakpoint-2xl:96rem;--container-3xs:16rem;--container-2xs:18rem;--container-xs:20rem;--container-sm:24rem;--container-md:28rem;--container-lg:32rem;--container-xl:36rem;--container-2xl:42rem;--container-3xl:48rem;--container-4xl:56rem;--container-5xl:64rem;--container-6xl:72rem;--container-7xl:80rem;--text-xs:.75rem;--text-xs--line-height:calc(1/.75);--text-sm:.875rem;--text-sm--line-height:calc(1.25/.875);--text-base:1rem;--text-base--line-height: 1.5 ;--text-lg:1.125rem;--text-lg--line-height:calc(1.75/1.125);--text-xl:1.25rem;--text-xl--line-height:calc(1.75/1.25);--text-2xl:1.5rem;--text-2xl--line-height:calc(2/1.5);--text-3xl:1.875rem;--text-3xl--line-height: 1.2 ;--text-4xl:2.25rem;--text-4xl--line-height:calc(2.5/2.25);--text-5xl:3rem;--text-5xl--line-height:1;--text-6xl:3.75rem;--text-6xl--line-height:1;--text-7xl:4.5rem;--text-7xl--line-height:1;--text-8xl:6rem;--text-8xl--line-height:1;--text-9xl:8rem;--text-9xl--line-height:1;--font-weight-thin:100;--font-weight-extralight:200;--font-weight-light:300;--font-weight-normal:400;--font-weight-medium:500;--font-weight-semibold:600;--font-weight-bold:700;--font-weight-extrabold:800;--font-weight-black:900;--tracking-tighter:-.05em;--tracking-tight:-.025em;--tracking-normal:0em;--tracking-wide:.025em;--tracking-wider:.05em;--tracking-widest:.1em;--leading-tight:1.25;--leading-snug:1.375;--leading-normal:1.5;--leading-relaxed:1.625;--leading-loose:2;--radius-xs:.125rem;--radius-sm:.25rem;--radius-md:.375rem;--radius-lg:.5rem;--radius-xl:.75rem;--radius-2xl:1rem;--radius-3xl:1.5rem;--radius-4xl:2rem;--shadow-2xs:0 1px #0000000d;--shadow-xs:0 1px 2px 0 #0000000d;--shadow-sm:0 1px 3px 0 #0000001a,0 1px 2px -1px #0000001a;--shadow-md:0 4px 6px -1px #0000001a,0 2px 4px -2px #0000001a;--shadow-lg:0 10px 15px -3px #0000001a,0 4px 6px -4px #0000001a;--shadow-xl:0 20px 25px -5px #0000001a,0 8px 10px -6px #0000001a;--shadow-2xl:0 25px 50px -12px #00000040;--inset-shadow-2xs:inset 0 1px #0000000d;--inset-shadow-xs:inset 0 1px 1px #0000000d;--inset-shadow-sm:inset 0 2px 4px #0000000d;--drop-shadow-xs:0 1px 1px #0000000d;--drop-shadow-sm:0 1px 2px #00000026;--drop-shadow-md:0 3px 3px #0000001f;--drop-shadow-lg:0 4px 4px #00000026;--drop-shadow-xl:0 9px 7px #0000001a;--drop-shadow-2xl:0 25px 25px #00000026;--ease-in:cubic-bezier(.4,0,1,1);--ease-out:cubic-bezier(0,0,.2,1);--ease-in-out:cubic-bezier(.4,0,.2,1);--animate-spin:spin 1s linear infinite;--animate-ping:ping 1s cubic-bezier(0,0,.2,1)infinite;--animate-pulse:pulse 2s cubic-bezier(.4,0,.6,1)infinite;--animate-bounce:bounce 1s infinite;--blur-xs:4px;--blur-sm:8px;--blur-md:12px;--blur-lg:16px;--blur-xl:24px;--blur-2xl:40px;--blur-3xl:64px;--perspective-dramatic:100px;--perspective-near:300px;--perspective-normal:500px;--perspective-midrange:800px;--perspective-distant:1200px;--aspect-video:16/9;--default-transition-duration:.15s;--default-transition-timing-function:cubic-bezier(.4,0,.2,1);--default-font-family:var(--font-sans);--default-font-feature-settings:var(--font-sans--font-feature-settings);--default-font-variation-settings:var(--font-sans--font-variation-settings);--default-mono-font-family:var(--font-mono);--default-mono-font-feature-settings:var(--font-mono--font-feature-settings);--default-mono-font-variation-settings:var(--font-mono--font-variation-settings)}}@layer base{*,:after,:before,::backdrop{box-sizing:border-box;border:0 solid;margin:0;padding:0}::file-selector-button{box-sizing:border-box;border:0 solid;margin:0;padding:0}html,:host{-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;line-height:1.5;font-family:var(--default-font-family,ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji");font-feature-settings:var(--default-font-feature-settings,normal);font-variation-settings:var(--default-font-variation-settings,normal);-webkit-tap-highlight-color:transparent}body{line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;-webkit-text-decoration:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:var(--default-mono-font-family,ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace);font-feature-settings:var(--default-mono-font-feature-settings,normal);font-variation-settings:var(--default-mono-font-variation-settings,normal);font-size:1em}small{font-size:80%}sub,sup{vertical-align:baseline;font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}:-moz-focusring{outline:auto}progress{vertical-align:baseline}summary{display:list-item}ol,ul,menu{list-style:none}img,svg,video,canvas,audio,iframe,embed,object{vertical-align:middle;display:block}img,video{max-width:100%;height:auto}button,input,select,optgroup,textarea{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}::file-selector-button{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}:where(select:is([multiple],[size])) optgroup{font-weight:bolder}:where(select:is([multiple],[size])) optgroup option{padding-inline-start:20px}::file-selector-button{margin-inline-end:4px}::placeholder{opacity:1;color:color-mix(in oklab,currentColor 50%,transparent)}textarea{resize:vertical}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-date-and-time-value{min-height:1lh;text-align:inherit}::-webkit-datetime-edit{display:inline-flex}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-datetime-edit{padding-block:0}::-webkit-datetime-edit-year-field{padding-block:0}::-webkit-datetime-edit-month-field{padding-block:0}::-webkit-datetime-edit-day-field{padding-block:0}::-webkit-datetime-edit-hour-field{padding-block:0}::-webkit-datetime-edit-minute-field{padding-block:0}::-webkit-datetime-edit-second-field{padding-block:0}::-webkit-datetime-edit-millisecond-field{padding-block:0}::-webkit-datetime-edit-meridiem-field{padding-block:0}:-moz-ui-invalid{box-shadow:none}button,input:where([type=button],[type=reset],[type=submit]){-webkit-appearance:button;-moz-appearance:button;appearance:button}::file-selector-button{-webkit-appearance:button;-moz-appearance:button;appearance:button}::-webkit-inner-spin-button{height:auto}::-webkit-outer-spin-button{height:auto}[hidden]:where(:not([hidden=until-found])){display:none!important}}@layer components;@layer utilities{.absolute{position:absolute}.relative{position:relative}.static{position:static}.inset-0{inset:calc(var(--spacing)*0)}.-mt-\[4\.9rem\]{margin-top:-4.9rem}.-mb-px{margin-bottom:-1px}.mb-1{margin-bottom:calc(var(--spacing)*1)}.mb-2{margin-bottom:calc(var(--spacing)*2)}.mb-4{margin-bottom:calc(var(--spacing)*4)}.mb-6{margin-bottom:calc(var(--spacing)*6)}.-ml-8{margin-left:calc(var(--spacing)*-8)}.flex{display:flex}.hidden{display:none}.inline-block{display:inline-block}.inline-flex{display:inline-flex}.table{display:table}.aspect-\[335\/376\]{aspect-ratio:335/376}.h-1{height:calc(var(--spacing)*1)}.h-1\.5{height:calc(var(--spacing)*1.5)}.h-2{height:calc(var(--spacing)*2)}.h-2\.5{height:calc(var(--spacing)*2.5)}.h-3{height:calc(var(--spacing)*3)}.h-3\.5{height:calc(var(--spacing)*3.5)}.h-14{height:calc(var(--spacing)*14)}.h-14\.5{height:calc(var(--spacing)*14.5)}.min-h-screen{min-height:100vh}.w-1{width:calc(var(--spacing)*1)}.w-1\.5{width:calc(var(--spacing)*1.5)}.w-2{width:calc(var(--spacing)*2)}.w-2\.5{width:calc(var(--spacing)*2.5)}.w-3{width:calc(var(--spacing)*3)}.w-3\.5{width:calc(var(--spacing)*3.5)}.w-\[448px\]{width:448px}.w-full{width:100%}.max-w-\[335px\]{max-width:335px}.max-w-none{max-width:none}.flex-1{flex:1}.shrink-0{flex-shrink:0}.translate-y-0{--tw-translate-y:calc(var(--spacing)*0);translate:var(--tw-translate-x)var(--tw-translate-y)}.transform{transform:var(--tw-rotate-x)var(--tw-rotate-y)var(--tw-rotate-z)var(--tw-skew-x)var(--tw-skew-y)}.flex-col{flex-direction:column}.flex-col-reverse{flex-direction:column-reverse}.items-center{align-items:center}.justify-center{justify-content:center}.justify-end{justify-content:flex-end}.gap-3{gap:calc(var(--spacing)*3)}.gap-4{gap:calc(var(--spacing)*4)}:where(.space-x-1>:not(:last-child)){--tw-space-x-reverse:0;margin-inline-start:calc(calc(var(--spacing)*1)*var(--tw-space-x-reverse));margin-inline-end:calc(calc(var(--spacing)*1)*calc(1 - var(--tw-space-x-reverse)))}.overflow-hidden{overflow:hidden}.rounded-full{border-radius:3.40282e38px}.rounded-sm{border-radius:var(--radius-sm)}.rounded-t-lg{border-top-left-radius:var(--radius-lg);border-top-right-radius:var(--radius-lg)}.rounded-br-lg{border-bottom-right-radius:var(--radius-lg)}.rounded-bl-lg{border-bottom-left-radius:var(--radius-lg)}.border{border-style:var(--tw-border-style);border-width:1px}.border-\[\#19140035\]{border-color:#19140035}.border-\[\#e3e3e0\]{border-color:#e3e3e0}.border-black{border-color:var(--color-black)}.border-transparent{border-color:#0000}.bg-\[\#1b1b18\]{background-color:#1b1b18}.bg-\[\#FDFDFC\]{background-color:#fdfdfc}.bg-\[\#dbdbd7\]{background-color:#dbdbd7}.bg-\[\#fff2f2\]{background-color:#fff2f2}.bg-white{background-color:var(--color-white)}.p-6{padding:calc(var(--spacing)*6)}.px-5{padding-inline:calc(var(--spacing)*5)}.py-1{padding-block:calc(var(--spacing)*1)}.py-1\.5{padding-block:calc(var(--spacing)*1.5)}.py-2{padding-block:calc(var(--spacing)*2)}.pb-12{padding-bottom:calc(var(--spacing)*12)}.text-sm{font-size:var(--text-sm);line-height:var(--tw-leading,var(--text-sm--line-height))}.text-\[13px\]{font-size:13px}.leading-\[20px\]{--tw-leading:20px;line-height:20px}.leading-normal{--tw-leading:var(--leading-normal);line-height:var(--leading-normal)}.font-medium{--tw-font-weight:var(--font-weight-medium);font-weight:var(--font-weight-medium)}.text-\[\#1b1b18\]{color:#1b1b18}.text-\[\#706f6c\]{color:#706f6c}.text-\[\#F53003\],.text-\[\#f53003\]{color:#f53003}.text-white{color:var(--color-white)}.underline{text-decoration-line:underline}.underline-offset-4{text-underline-offset:4px}.opacity-100{opacity:1}.shadow-\[0px_0px_1px_0px_rgba\(0\,0\,0\,0\.03\)\,0px_1px_2px_0px_rgba\(0\,0\,0\,0\.06\)\]{--tw-shadow:0px 0px 1px 0px var(--tw-shadow-color,#00000008),0px 1px 2px 0px var(--tw-shadow-color,#0000000f);box-shadow:var(--tw-inset-shadow),var(--tw-inset-ring-shadow),var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow)}.shadow-\[inset_0px_0px_0px_1px_rgba\(26\,26\,0\,0\.16\)\]{--tw-shadow:inset 0px 0px 0px 1px var(--tw-shadow-color,#1a1a0029);box-shadow:var(--tw-inset-shadow),var(--tw-inset-ring-shadow),var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow)}.\!filter{filter:var(--tw-blur,)var(--tw-brightness,)var(--tw-contrast,)var(--tw-grayscale,)var(--tw-hue-rotate,)var(--tw-invert,)var(--tw-saturate,)var(--tw-sepia,)var(--tw-drop-shadow,)!important}.filter{filter:var(--tw-blur,)var(--tw-brightness,)var(--tw-contrast,)var(--tw-grayscale,)var(--tw-hue-rotate,)var(--tw-invert,)var(--tw-saturate,)var(--tw-sepia,)var(--tw-drop-shadow,)}.transition-all{transition-property:all;transition-timing-function:var(--tw-ease,var(--default-transition-timing-function));transition-duration:var(--tw-duration,var(--default-transition-duration))}.transition-opacity{transition-property:opacity;transition-timing-function:var(--tw-ease,var(--default-transition-timing-function));transition-duration:var(--tw-duration,var(--default-transition-duration))}.delay-300{transition-delay:.3s}.duration-750{--tw-duration:.75s;transition-duration:.75s}.not-has-\[nav\]\:hidden:not(:has(:is(nav))){display:none}.before\:absolute:before{content:var(--tw-content);position:absolute}.before\:top-0:before{content:var(--tw-content);top:calc(var(--spacing)*0)}.before\:top-1\/2:before{content:var(--tw-content);top:50%}.before\:bottom-0:before{content:var(--tw-content);bottom:calc(var(--spacing)*0)}.before\:bottom-1\/2:before{content:var(--tw-content);bottom:50%}.before\:left-\[0\.4rem\]:before{content:var(--tw-content);left:.4rem}.before\:border-l:before{content:var(--tw-content);border-left-style:var(--tw-border-style);border-left-width:1px}.before\:border-\[\#e3e3e0\]:before{content:var(--tw-content);border-color:#e3e3e0}@media (hover:hover){.hover\:border-\[\#1915014a\]:hover{border-color:#1915014a}.hover\:border-\[\#19140035\]:hover{border-color:#19140035}.hover\:border-black:hover{border-color:var(--color-black)}.hover\:bg-black:hover{background-color:var(--color-black)}}@media (width>=64rem){.lg\:-mt-\[6\.6rem\]{margin-top:-6.6rem}.lg\:mb-0{margin-bottom:calc(var(--spacing)*0)}.lg\:mb-6{margin-bottom:calc(var(--spacing)*6)}.lg\:-ml-px{margin-left:-1px}.lg\:ml-0{margin-left:calc(var(--spacing)*0)}.lg\:block{display:block}.lg\:aspect-auto{aspect-ratio:auto}.lg\:w-\[438px\]{width:438px}.lg\:max-w-4xl{max-width:var(--container-4xl)}.lg\:grow{flex-grow:1}.lg\:flex-row{flex-direction:row}.lg\:justify-center{justify-content:center}.lg\:rounded-t-none{border-top-left-radius:0;border-top-right-radius:0}.lg\:rounded-tl-lg{border-top-left-radius:var(--radius-lg)}.lg\:rounded-r-lg{border-top-right-radius:var(--radius-lg);border-bottom-right-radius:var(--radius-lg)}.lg\:rounded-br-none{border-bottom-right-radius:0}.lg\:p-8{padding:calc(var(--spacing)*8)}.lg\:p-20{padding:calc(var(--spacing)*20)}}@media (prefers-color-scheme:dark){.dark\:block{display:block}.dark\:hidden{display:none}.dark\:border-\[\#3E3E3A\]{border-color:#3e3e3a}.dark\:border-\[\#eeeeec\]{border-color:#eeeeec}.dark\:bg-\[\#0a0a0a\]{background-color:#0a0a0a}.dark\:bg-\[\#1D0002\]{background-color:#1d0002}.dark\:bg-\[\#3E3E3A\]{background-color:#3e3e3a}.dark\:bg-\[\#161615\]{background-color:#161615}.dark\:bg-\[\#eeeeec\]{background-color:#eeeeec}.dark\:text-\[\#1C1C1A\]{color:#1c1c1a}.dark\:text-\[\#A1A09A\]{color:#a1a09a}.dark\:text-\[\#EDEDEC\]{color:#ededec}.dark\:text-\[\#F61500\]{color:#f61500}.dark\:text-\[\#FF4433\]{color:#f43}.dark\:shadow-\[inset_0px_0px_0px_1px_\#fffaed2d\]{--tw-shadow:inset 0px 0px 0px 1px var(--tw-shadow-color,#fffaed2d);box-shadow:var(--tw-inset-shadow),var(--tw-inset-ring-shadow),var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow)}.dark\:before\:border-\[\#3E3E3A\]:before{content:var(--tw-content);border-color:#3e3e3a}@media (hover:hover){.dark\:hover\:border-\[\#3E3E3A\]:hover{border-color:#3e3e3a}.dark\:hover\:border-\[\#62605b\]:hover{border-color:#62605b}.dark\:hover\:border-white:hover{border-color:var(--color-white)}.dark\:hover\:bg-white:hover{background-color:var(--color-white)}}}@starting-style{.starting\:translate-y-4{--tw-translate-y:calc(var(--spacing)*4);translate:var(--tw-translate-x)var(--tw-translate-y)}}@starting-style{.starting\:translate-y-6{--tw-translate-y:calc(var(--spacing)*6);translate:var(--tw-translate-x)var(--tw-translate-y)}}@starting-style{.starting\:opacity-0{opacity:0}}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes ping{75%,to{opacity:0;transform:scale(2)}}@keyframes pulse{50%{opacity:.5}}@keyframes bounce{0%,to{animation-timing-function:cubic-bezier(.8,0,1,1);transform:translateY(-25%)}50%{animation-timing-function:cubic-bezier(0,0,.2,1);transform:none}}@property --tw-translate-x{syntax:"*";inherits:false;initial-value:0}@property --tw-translate-y{syntax:"*";inherits:false;initial-value:0}@property --tw-translate-z{syntax:"*";inherits:false;initial-value:0}@property --tw-rotate-x{syntax:"*";inherits:false;initial-value:rotateX(0)}@property --tw-rotate-y{syntax:"*";inherits:false;initial-value:rotateY(0)}@property --tw-rotate-z{syntax:"*";inherits:false;initial-value:rotateZ(0)}@property --tw-skew-x{syntax:"*";inherits:false;initial-value:skewX(0)}@property --tw-skew-y{syntax:"*";inherits:false;initial-value:skewY(0)}@property --tw-space-x-reverse{syntax:"*";inherits:false;initial-value:0}@property --tw-border-style{syntax:"*";inherits:false;initial-value:solid}@property --tw-leading{syntax:"*";inherits:false}@property --tw-font-weight{syntax:"*";inherits:false}@property --tw-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-shadow-color{syntax:"*";inherits:false}@property --tw-inset-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-inset-shadow-color{syntax:"*";inherits:false}@property --tw-ring-color{syntax:"*";inherits:false}@property --tw-ring-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-inset-ring-color{syntax:"*";inherits:false}@property --tw-inset-ring-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-ring-inset{syntax:"*";inherits:false}@property --tw-ring-offset-width{syntax:"<length>";inherits:false;initial-value:0}@property --tw-ring-offset-color{syntax:"*";inherits:false;initial-value:#fff}@property --tw-ring-offset-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-blur{syntax:"*";inherits:false}@property --tw-brightness{syntax:"*";inherits:false}@property --tw-contrast{syntax:"*";inherits:false}@property --tw-grayscale{syntax:"*";inherits:false}@property --tw-hue-rotate{syntax:"*";inherits:false}@property --tw-invert{syntax:"*";inherits:false}@property --tw-opacity{syntax:"*";inherits:false}@property --tw-saturate{syntax:"*";inherits:false}@property --tw-sepia{syntax:"*";inherits:false}@property --tw-drop-shadow{syntax:"*";inherits:false}@property --tw-duration{syntax:"*";inherits:false}@property --tw-content{syntax:"*";inherits:false;initial-value:""}
-            </style>
-        @endif
-    </head>
-    <body class="bg-[#FDFDFC] dark:bg-[#0a0a0a] text-[#1b1b18] flex p-6 lg:p-8 items-center lg:justify-center min-h-screen flex-col">
-        <header class="w-full lg:max-w-4xl max-w-[335px] text-sm mb-6 not-has-[nav]:hidden">
-            @if (Route::has('login'))
-                <nav class="flex items-center justify-end gap-4">
-                    @auth
-                        <a
-                            href="{{ url('/dashboard') }}"
-                            class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] border-[#19140035] hover:border-[#1915014a] border text-[#1b1b18] dark:border-[#3E3E3A] dark:hover:border-[#62605b] rounded-sm text-sm leading-normal"
-                        >
-                            Dashboard
-                        </a>
-                    @else
-                        <a
-                            href="{{ route('login') }}"
-                            class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] text-[#1b1b18] border border-transparent hover:border-[#19140035] dark:hover:border-[#3E3E3A] rounded-sm text-sm leading-normal"
-                        >
-                            Log in
-                        </a>
+            .testimonial-author {
+                font-size: 13px;
+            }
+        }
+    </style>
+    <link rel='stylesheet' id='wp-block-library-css'
+        href='{{asset('web-assets/css/block-library/style.ver6.7.2.min.css')}}' type='text/css'
+        media='all' />
+    <style id='classic-theme-styles-inline-css' type='text/css'>
+        /*! This file is auto-generated */
+        .wp-block-button__link {
+            color: #fff;
+            background-color: #32373c;
+            border-radius: 9999px;
+            box-shadow: none;
+            text-decoration: none;
+            padding: calc(.667em + 2px) calc(1.333em + 2px);
+            font-size: 1.125em
+        }
 
-                        @if (Route::has('register'))
-                            <a
-                                href="{{ route('register') }}"
-                                class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] border-[#19140035] hover:border-[#1915014a] border text-[#1b1b18] dark:border-[#3E3E3A] dark:hover:border-[#62605b] rounded-sm text-sm leading-normal">
-                                Register
-                            </a>
-                        @endif
-                    @endauth
-                </nav>
-            @endif
-        </header>
-        <div class="flex items-center justify-center w-full transition-opacity opacity-100 duration-750 lg:grow starting:opacity-0">
-            <main class="flex max-w-[335px] w-full flex-col-reverse lg:max-w-4xl lg:flex-row">
-                <div class="text-[13px] leading-[20px] flex-1 p-6 pb-12 lg:p-20 bg-white dark:bg-[#161615] dark:text-[#EDEDEC] shadow-[inset_0px_0px_0px_1px_rgba(26,26,0,0.16)] dark:shadow-[inset_0px_0px_0px_1px_#fffaed2d] rounded-bl-lg rounded-br-lg lg:rounded-tl-lg lg:rounded-br-none">
-                    <h1 class="mb-1 font-medium">Let's get started</h1>
-                    <p class="mb-2 text-[#706f6c] dark:text-[#A1A09A]">Laravel has an incredibly rich ecosystem. <br>We suggest starting with the following.</p>
-                    <ul class="flex flex-col mb-4 lg:mb-6">
-                        <li class="flex items-center gap-4 py-2 relative before:border-l before:border-[#e3e3e0] dark:before:border-[#3E3E3A] before:top-1/2 before:bottom-0 before:left-[0.4rem] before:absolute">
-                            <span class="relative py-1 bg-white dark:bg-[#161615]">
-                                <span class="flex items-center justify-center rounded-full bg-[#FDFDFC] dark:bg-[#161615] shadow-[0px_0px_1px_0px_rgba(0,0,0,0.03),0px_1px_2px_0px_rgba(0,0,0,0.06)] w-3.5 h-3.5 border dark:border-[#3E3E3A] border-[#e3e3e0]">
-                                    <span class="rounded-full bg-[#dbdbd7] dark:bg-[#3E3E3A] w-1.5 h-1.5"></span>
-                                </span>
-                            </span>
-                            <span>
-                                Read the
-                                <a href="https://laravel.com/docs" target="_blank" class="inline-flex items-center space-x-1 font-medium underline underline-offset-4 text-[#f53003] dark:text-[#FF4433] ml-1">
-                                    <span>Documentation</span>
-                                    <svg
-                                        width="10"
-                                        height="11"
-                                        viewBox="0 0 10 11"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="w-2.5 h-2.5"
-                                    >
-                                        <path
-                                            d="M7.70833 6.95834V2.79167H3.54167M2.5 8L7.5 3.00001"
-                                            stroke="currentColor"
-                                            stroke-linecap="square"
-                                        />
-                                    </svg>
-                                </a>
-                            </span>
-                        </li>
-                        <li class="flex items-center gap-4 py-2 relative before:border-l before:border-[#e3e3e0] dark:before:border-[#3E3E3A] before:bottom-1/2 before:top-0 before:left-[0.4rem] before:absolute">
-                            <span class="relative py-1 bg-white dark:bg-[#161615]">
-                                <span class="flex items-center justify-center rounded-full bg-[#FDFDFC] dark:bg-[#161615] shadow-[0px_0px_1px_0px_rgba(0,0,0,0.03),0px_1px_2px_0px_rgba(0,0,0,0.06)] w-3.5 h-3.5 border dark:border-[#3E3E3A] border-[#e3e3e0]">
-                                    <span class="rounded-full bg-[#dbdbd7] dark:bg-[#3E3E3A] w-1.5 h-1.5"></span>
-                                </span>
-                            </span>
-                            <span>
-                                Watch video tutorials at
-                                <a href="https://laracasts.com" target="_blank" class="inline-flex items-center space-x-1 font-medium underline underline-offset-4 text-[#f53003] dark:text-[#FF4433] ml-1">
-                                    <span>Laracasts</span>
-                                    <svg
-                                        width="10"
-                                        height="11"
-                                        viewBox="0 0 10 11"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="w-2.5 h-2.5"
-                                    >
-                                        <path
-                                            d="M7.70833 6.95834V2.79167H3.54167M2.5 8L7.5 3.00001"
-                                            stroke="currentColor"
-                                            stroke-linecap="square"
-                                        />
-                                    </svg>
-                                </a>
-                            </span>
-                        </li>
-                    </ul>
-                    <ul class="flex gap-3 text-sm leading-normal">
-                        <li>
-                            <a href="https://cloud.laravel.com" target="_blank" class="inline-block dark:bg-[#eeeeec] dark:border-[#eeeeec] dark:text-[#1C1C1A] dark:hover:bg-white dark:hover:border-white hover:bg-black hover:border-black px-5 py-1.5 bg-[#1b1b18] rounded-sm border border-black text-white text-sm leading-normal">
-                                Deploy now
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="bg-[#fff2f2] dark:bg-[#1D0002] relative lg:-ml-px -mb-px lg:mb-0 rounded-t-lg lg:rounded-t-none lg:rounded-r-lg aspect-[335/376] lg:aspect-auto w-full lg:w-[438px] shrink-0 overflow-hidden">
-                    {{-- Laravel Logo --}}
-                    <svg class="w-full text-[#F53003] dark:text-[#F61500] transition-all translate-y-0 opacity-100 max-w-none duration-750 starting:opacity-0 starting:translate-y-6" viewBox="0 0 438 104" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M17.2036 -3H0V102.197H49.5189V86.7187H17.2036V-3Z" fill="currentColor" />
-                        <path d="M110.256 41.6337C108.061 38.1275 104.945 35.3731 100.905 33.3681C96.8667 31.3647 92.8016 30.3618 88.7131 30.3618C83.4247 30.3618 78.5885 31.3389 74.201 33.2923C69.8111 35.2456 66.0474 37.928 62.9059 41.3333C59.7643 44.7401 57.3198 48.6726 55.5754 53.1293C53.8287 57.589 52.9572 62.274 52.9572 67.1813C52.9572 72.1925 53.8287 76.8995 55.5754 81.3069C57.3191 85.7173 59.7636 89.6241 62.9059 93.0293C66.0474 96.4361 69.8119 99.1155 74.201 101.069C78.5885 103.022 83.4247 103.999 88.7131 103.999C92.8016 103.999 96.8667 102.997 100.905 100.994C104.945 98.9911 108.061 96.2359 110.256 92.7282V102.195H126.563V32.1642H110.256V41.6337ZM108.76 75.7472C107.762 78.4531 106.366 80.8078 104.572 82.8112C102.776 84.8161 100.606 86.4183 98.0637 87.6206C95.5202 88.823 92.7004 89.4238 89.6103 89.4238C86.5178 89.4238 83.7252 88.823 81.2324 87.6206C78.7388 86.4183 76.5949 84.8161 74.7998 82.8112C73.004 80.8078 71.6319 78.4531 70.6856 75.7472C69.7356 73.0421 69.2644 70.1868 69.2644 67.1821C69.2644 64.1758 69.7356 61.3205 70.6856 58.6154C71.6319 55.9102 73.004 53.5571 74.7998 51.5522C76.5949 49.5495 78.738 47.9451 81.2324 46.7427C83.7252 45.5404 86.5178 44.9396 89.6103 44.9396C92.7012 44.9396 95.5202 45.5404 98.0637 46.7427C100.606 47.9451 102.776 49.5487 104.572 51.5522C106.367 53.5571 107.762 55.9102 108.76 58.6154C109.756 61.3205 110.256 64.1758 110.256 67.1821C110.256 70.1868 109.756 73.0421 108.76 75.7472Z" fill="currentColor" />
-                        <path d="M242.805 41.6337C240.611 38.1275 237.494 35.3731 233.455 33.3681C229.416 31.3647 225.351 30.3618 221.262 30.3618C215.974 30.3618 211.138 31.3389 206.75 33.2923C202.36 35.2456 198.597 37.928 195.455 41.3333C192.314 44.7401 189.869 48.6726 188.125 53.1293C186.378 57.589 185.507 62.274 185.507 67.1813C185.507 72.1925 186.378 76.8995 188.125 81.3069C189.868 85.7173 192.313 89.6241 195.455 93.0293C198.597 96.4361 202.361 99.1155 206.75 101.069C211.138 103.022 215.974 103.999 221.262 103.999C225.351 103.999 229.416 102.997 233.455 100.994C237.494 98.9911 240.611 96.2359 242.805 92.7282V102.195H259.112V32.1642H242.805V41.6337ZM241.31 75.7472C240.312 78.4531 238.916 80.8078 237.122 82.8112C235.326 84.8161 233.156 86.4183 230.614 87.6206C228.07 88.823 225.251 89.4238 222.16 89.4238C219.068 89.4238 216.275 88.823 213.782 87.6206C211.289 86.4183 209.145 84.8161 207.35 82.8112C205.554 80.8078 204.182 78.4531 203.236 75.7472C202.286 73.0421 201.814 70.1868 201.814 67.1821C201.814 64.1758 202.286 61.3205 203.236 58.6154C204.182 55.9102 205.554 53.5571 207.35 51.5522C209.145 49.5495 211.288 47.9451 213.782 46.7427C216.275 45.5404 219.068 44.9396 222.16 44.9396C225.251 44.9396 228.07 45.5404 230.614 46.7427C233.156 47.9451 235.326 49.5487 237.122 51.5522C238.917 53.5571 240.312 55.9102 241.31 58.6154C242.306 61.3205 242.806 64.1758 242.806 67.1821C242.805 70.1868 242.305 73.0421 241.31 75.7472Z" fill="currentColor" />
-                        <path d="M438 -3H421.694V102.197H438V-3Z" fill="currentColor" />
-                        <path d="M139.43 102.197H155.735V48.2834H183.712V32.1665H139.43V102.197Z" fill="currentColor" />
-                        <path d="M324.49 32.1665L303.995 85.794L283.498 32.1665H266.983L293.748 102.197H314.242L341.006 32.1665H324.49Z" fill="currentColor" />
-                        <path d="M376.571 30.3656C356.603 30.3656 340.797 46.8497 340.797 67.1828C340.797 89.6597 356.094 104 378.661 104C391.29 104 399.354 99.1488 409.206 88.5848L398.189 80.0226C398.183 80.031 389.874 90.9895 377.468 90.9895C363.048 90.9895 356.977 79.3111 356.977 73.269H411.075C413.917 50.1328 398.775 30.3656 376.571 30.3656ZM357.02 61.0967C357.145 59.7487 359.023 43.3761 376.442 43.3761C393.861 43.3761 395.978 59.7464 396.099 61.0967H357.02Z" fill="currentColor" />
-                    </svg>
+        .wp-block-file__button {
+            background: #32373c;
+            color: #fff;
+            text-decoration: none
+        }
+    </style>
+    <style id='global-styles-inline-css' type='text/css'>
+        :root {
+            --wp--preset--aspect-ratio--square: 1;
+            --wp--preset--aspect-ratio--4-3: 4/3;
+            --wp--preset--aspect-ratio--3-4: 3/4;
+            --wp--preset--aspect-ratio--3-2: 3/2;
+            --wp--preset--aspect-ratio--2-3: 2/3;
+            --wp--preset--aspect-ratio--16-9: 16/9;
+            --wp--preset--aspect-ratio--9-16: 9/16;
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: 36px;
+            --wp--preset--font-size--x-large: 42px;
+            --wp--preset--font-family--inter: "Inter", sans-serif;
+            --wp--preset--font-family--cardo: Cardo;
+            --wp--preset--spacing--20: 0.44rem;
+            --wp--preset--spacing--30: 0.67rem;
+            --wp--preset--spacing--40: 1rem;
+            --wp--preset--spacing--50: 1.5rem;
+            --wp--preset--spacing--60: 2.25rem;
+            --wp--preset--spacing--70: 3.38rem;
+            --wp--preset--spacing--80: 5.06rem;
+            --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+            --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+            --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+        }
 
-                    {{-- Light Mode 12 SVG --}}
-                    <svg class="w-[448px] max-w-none relative -mt-[4.9rem] -ml-8 lg:ml-0 lg:-mt-[6.6rem] dark:hidden" viewBox="0 0 440 376" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g class="transition-all delay-300 translate-y-0 opacity-100 duration-750 starting:opacity-0 starting:translate-y-4">
-                            <path d="M188.263 355.73L188.595 355.73C195.441 348.845 205.766 339.761 219.569 328.477C232.93 317.193 242.978 308.205 249.714 301.511C256.34 294.626 260.867 287.358 263.296 279.708C265.725 272.058 264.565 264.121 259.816 255.896C254.516 246.716 247.062 239.352 237.454 233.805C227.957 228.067 217.908 225.198 207.307 225.198C196.927 225.197 190.136 227.97 186.934 233.516C183.621 238.872 184.726 246.331 190.247 255.894L125.647 255.891C116.371 239.825 112.395 225.481 113.72 212.858C115.265 200.235 121.559 190.481 132.602 183.596C143.754 176.52 158.607 172.982 177.159 172.983C196.594 172.984 215.863 176.523 234.968 183.6C253.961 190.486 271.299 200.241 286.98 212.864C302.661 225.488 315.14 239.833 324.416 255.899C333.03 270.817 336.841 283.918 335.847 295.203C335.075 306.487 331.376 316.336 324.75 324.751C318.346 333.167 308.408 343.494 294.936 355.734L377.094 355.737L405.917 405.656L217.087 405.649L188.263 355.73Z" fill="black" />
-                            <path d="M9.11884 226.339L-13.7396 226.338L-42.7286 176.132L43.0733 176.135L175.595 405.649L112.651 405.647L9.11884 226.339Z" fill="black" />
-                            <path d="M188.263 355.73L188.595 355.73C195.441 348.845 205.766 339.761 219.569 328.477C232.93 317.193 242.978 308.205 249.714 301.511C256.34 294.626 260.867 287.358 263.296 279.708C265.725 272.058 264.565 264.121 259.816 255.896C254.516 246.716 247.062 239.352 237.454 233.805C227.957 228.067 217.908 225.198 207.307 225.198C196.927 225.197 190.136 227.97 186.934 233.516C183.621 238.872 184.726 246.331 190.247 255.894L125.647 255.891C116.371 239.825 112.395 225.481 113.72 212.858C115.265 200.235 121.559 190.481 132.602 183.596C143.754 176.52 158.607 172.982 177.159 172.983C196.594 172.984 215.863 176.523 234.968 183.6C253.961 190.486 271.299 200.241 286.98 212.864C302.661 225.488 315.14 239.833 324.416 255.899C333.03 270.817 336.841 283.918 335.847 295.203C335.075 306.487 331.376 316.336 324.75 324.751C318.346 333.167 308.408 343.494 294.936 355.734L377.094 355.737L405.917 405.656L217.087 405.649L188.263 355.73Z" stroke="#1B1B18" stroke-width="1" />
-                            <path d="M9.11884 226.339L-13.7396 226.338L-42.7286 176.132L43.0733 176.135L175.595 405.649L112.651 405.647L9.11884 226.339Z" stroke="#1B1B18" stroke-width="1" />
-                            <path d="M204.592 327.449L204.923 327.449C211.769 320.564 222.094 311.479 235.897 300.196C249.258 288.912 259.306 279.923 266.042 273.23C272.668 266.345 277.195 259.077 279.624 251.427C282.053 243.777 280.893 235.839 276.145 227.615C270.844 218.435 263.39 211.071 253.782 205.524C244.285 199.786 234.236 196.917 223.635 196.916C213.255 196.916 206.464 199.689 203.262 205.235C199.949 210.59 201.054 218.049 206.575 227.612L141.975 227.61C132.699 211.544 128.723 197.2 130.048 184.577C131.593 171.954 137.887 162.2 148.93 155.315C160.083 148.239 174.935 144.701 193.487 144.702C212.922 144.703 232.192 148.242 251.296 155.319C270.289 162.205 287.627 171.96 303.308 184.583C318.989 197.207 331.468 211.552 340.745 227.618C349.358 242.536 353.169 255.637 352.175 266.921C351.403 278.205 347.704 288.055 341.078 296.47C334.674 304.885 324.736 315.213 311.264 327.453L393.422 327.456L422.246 377.375L233.415 377.368L204.592 327.449Z" fill="#F8B803" />
-                            <path d="M25.447 198.058L2.58852 198.057L-26.4005 147.851L59.4015 147.854L191.923 377.368L128.979 377.365L25.447 198.058Z" fill="#F8B803" />
-                            <path d="M204.592 327.449L204.923 327.449C211.769 320.564 222.094 311.479 235.897 300.196C249.258 288.912 259.306 279.923 266.042 273.23C272.668 266.345 277.195 259.077 279.624 251.427C282.053 243.777 280.893 235.839 276.145 227.615C270.844 218.435 263.39 211.071 253.782 205.524C244.285 199.786 234.236 196.917 223.635 196.916C213.255 196.916 206.464 199.689 203.262 205.235C199.949 210.59 201.054 218.049 206.575 227.612L141.975 227.61C132.699 211.544 128.723 197.2 130.048 184.577C131.593 171.954 137.887 162.2 148.93 155.315C160.083 148.239 174.935 144.701 193.487 144.702C212.922 144.703 232.192 148.242 251.296 155.319C270.289 162.205 287.627 171.96 303.308 184.583C318.989 197.207 331.468 211.552 340.745 227.618C349.358 242.536 353.169 255.637 352.175 266.921C351.403 278.205 347.704 288.055 341.078 296.47C334.674 304.885 324.736 315.213 311.264 327.453L393.422 327.456L422.246 377.375L233.415 377.368L204.592 327.449Z" stroke="#1B1B18" stroke-width="1" />
-                            <path d="M25.447 198.058L2.58852 198.057L-26.4005 147.851L59.4015 147.854L191.923 377.368L128.979 377.365L25.447 198.058Z" stroke="#1B1B18" stroke-width="1" />
-                        </g>
-                        <g style="mix-blend-mode: hard-light" class="transition-all delay-300 translate-y-0 opacity-100 duration-750 starting:opacity-0 starting:translate-y-4">
-                            <path d="M217.342 305.363L217.673 305.363C224.519 298.478 234.844 289.393 248.647 278.11C262.008 266.826 272.056 257.837 278.792 251.144C285.418 244.259 289.945 236.991 292.374 229.341C294.803 221.691 293.643 213.753 288.895 205.529C283.594 196.349 276.14 188.985 266.532 183.438C257.035 177.7 246.986 174.831 236.385 174.83C226.005 174.83 219.214 177.603 216.012 183.149C212.699 188.504 213.804 195.963 219.325 205.527L154.725 205.524C145.449 189.458 141.473 175.114 142.798 162.491C144.343 149.868 150.637 140.114 161.68 133.229C172.833 126.153 187.685 122.615 206.237 122.616C225.672 122.617 244.942 126.156 264.046 133.233C283.039 140.119 300.377 149.874 316.058 162.497C331.739 175.121 344.218 189.466 353.495 205.532C362.108 220.45 365.919 233.551 364.925 244.835C364.153 256.12 360.454 265.969 353.828 274.384C347.424 282.799 337.486 293.127 324.014 305.367L406.172 305.37L434.996 355.289L246.165 355.282L217.342 305.363Z" fill="#F0ACB8" />
-                            <path d="M38.197 175.972L15.3385 175.971L-13.6505 125.765L72.1515 125.768L204.673 355.282L141.729 355.279L38.197 175.972Z" fill="#F0ACB8" />
-                            <path d="M217.342 305.363L217.673 305.363C224.519 298.478 234.844 289.393 248.647 278.11C262.008 266.826 272.056 257.837 278.792 251.144C285.418 244.259 289.945 236.991 292.374 229.341C294.803 221.691 293.643 213.753 288.895 205.529C283.594 196.349 276.14 188.985 266.532 183.438C257.035 177.7 246.986 174.831 236.385 174.83C226.005 174.83 219.214 177.603 216.012 183.149C212.699 188.504 213.804 195.963 219.325 205.527L154.725 205.524C145.449 189.458 141.473 175.114 142.798 162.491C144.343 149.868 150.637 140.114 161.68 133.229C172.833 126.153 187.685 122.615 206.237 122.616C225.672 122.617 244.942 126.156 264.046 133.233C283.039 140.119 300.377 149.874 316.058 162.497C331.739 175.121 344.218 189.466 353.495 205.532C362.108 220.45 365.919 233.551 364.925 244.835C364.153 256.12 360.454 265.969 353.828 274.384C347.424 282.799 337.486 293.127 324.014 305.367L406.172 305.37L434.996 355.289L246.165 355.282L217.342 305.363Z" stroke="#1B1B18" stroke-width="1" />
-                            <path d="M38.197 175.972L15.3385 175.971L-13.6505 125.765L72.1515 125.768L204.673 355.282L141.729 355.279L38.197 175.972Z" stroke="#1B1B18" stroke-width="1" />
-                        </g>
-                        <g style="mix-blend-mode: plus-darker" class="transition-all delay-300 translate-y-0 opacity-100 duration-750 starting:opacity-0 starting:translate-y-4">
-                            <path d="M230.951 281.792L231.282 281.793C238.128 274.907 248.453 265.823 262.256 254.539C275.617 243.256 285.666 234.267 292.402 227.573C299.027 220.688 303.554 213.421 305.983 205.771C308.412 198.12 307.253 190.183 302.504 181.959C297.203 172.778 289.749 165.415 280.142 159.868C270.645 154.13 260.596 151.26 249.995 151.26C239.615 151.26 232.823 154.033 229.621 159.579C226.309 164.934 227.413 172.393 232.935 181.956L168.335 181.954C159.058 165.888 155.082 151.543 156.407 138.92C157.953 126.298 164.247 116.544 175.289 109.659C186.442 102.583 201.294 99.045 219.846 99.0457C239.281 99.0464 258.551 102.585 277.655 109.663C296.649 116.549 313.986 126.303 329.667 138.927C345.349 151.551 357.827 165.895 367.104 181.961C375.718 196.88 379.528 209.981 378.535 221.265C377.762 232.549 374.063 242.399 367.438 250.814C361.033 259.229 351.095 269.557 337.624 281.796L419.782 281.8L448.605 331.719L259.774 331.712L230.951 281.792Z" fill="#F3BEC7" />
-                            <path d="M51.8063 152.402L28.9479 152.401L-0.0411453 102.195L85.7608 102.198L218.282 331.711L155.339 331.709L51.8063 152.402Z" fill="#F3BEC7" />
-                            <path d="M230.951 281.792L231.282 281.793C238.128 274.907 248.453 265.823 262.256 254.539C275.617 243.256 285.666 234.267 292.402 227.573C299.027 220.688 303.554 213.421 305.983 205.771C308.412 198.12 307.253 190.183 302.504 181.959C297.203 172.778 289.749 165.415 280.142 159.868C270.645 154.13 260.596 151.26 249.995 151.26C239.615 151.26 232.823 154.033 229.621 159.579C226.309 164.934 227.413 172.393 232.935 181.956L168.335 181.954C159.058 165.888 155.082 151.543 156.407 138.92C157.953 126.298 164.247 116.544 175.289 109.659C186.442 102.583 201.294 99.045 219.846 99.0457C239.281 99.0464 258.551 102.585 277.655 109.663C296.649 116.549 313.986 126.303 329.667 138.927C345.349 151.551 357.827 165.895 367.104 181.961C375.718 196.88 379.528 209.981 378.535 221.265C377.762 232.549 374.063 242.399 367.438 250.814C361.033 259.229 351.095 269.557 337.624 281.796L419.782 281.8L448.605 331.719L259.774 331.712L230.951 281.792Z" stroke="#1B1B18" stroke-width="1" />
-                            <path d="M51.8063 152.402L28.9479 152.401L-0.0411453 102.195L85.7608 102.198L218.282 331.711L155.339 331.709L51.8063 152.402Z" stroke="#1B1B18" stroke-width="1" />
-                        </g>
-                        <g class="transition-all delay-300 translate-y-0 opacity-100 duration-750 starting:opacity-0 starting:translate-y-4">
-                            <path d="M188.467 355.363L188.798 355.363C195.644 348.478 205.969 339.393 219.772 328.11C233.133 316.826 243.181 307.837 249.917 301.144C253.696 297.217 256.792 293.166 259.205 288.991C261.024 285.845 262.455 282.628 263.499 279.341C265.928 271.691 264.768 263.753 260.02 255.529C254.719 246.349 247.265 238.985 237.657 233.438C228.16 227.7 218.111 224.831 207.51 224.83C197.13 224.83 190.339 227.603 187.137 233.149C183.824 238.504 184.929 245.963 190.45 255.527L125.851 255.524C116.574 239.458 112.598 225.114 113.923 212.491C114.615 206.836 116.261 201.756 118.859 197.253C122.061 191.704 126.709 187.03 132.805 183.229C143.958 176.153 158.81 172.615 177.362 172.616C196.797 172.617 216.067 176.156 235.171 183.233C254.164 190.119 271.502 199.874 287.183 212.497C302.864 225.121 315.343 239.466 324.62 255.532C333.233 270.45 337.044 283.551 336.05 294.835C335.46 303.459 333.16 311.245 329.151 318.194C327.915 320.337 326.515 322.4 324.953 324.384C318.549 332.799 308.611 343.127 295.139 355.367L377.297 355.37L406.121 405.289L217.29 405.282L188.467 355.363Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M9.32197 225.972L-13.5365 225.971L-42.5255 175.765L43.2765 175.768L175.798 405.282L112.854 405.279L9.32197 225.972Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M345.247 111.915C329.566 99.2919 312.229 89.5371 293.235 82.6512L235.167 183.228C254.161 190.114 271.498 199.869 287.179 212.492L345.247 111.915Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M382.686 154.964C373.41 138.898 360.931 124.553 345.25 111.93L287.182 212.506C302.863 225.13 315.342 239.475 324.618 255.541L382.686 154.964Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M293.243 82.6472C274.139 75.57 254.869 72.031 235.434 72.0303L177.366 172.607C196.801 172.608 216.071 176.147 235.175 183.224L293.243 82.6472Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M394.118 194.257C395.112 182.973 391.301 169.872 382.688 154.953L324.619 255.53C333.233 270.448 337.044 283.55 336.05 294.834L394.118 194.257Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M235.432 72.0311C216.88 72.0304 202.027 75.5681 190.875 82.6442L132.806 183.221C143.959 176.145 158.812 172.607 177.363 172.608L235.432 72.0311Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M265.59 124.25C276.191 124.251 286.24 127.12 295.737 132.858L237.669 233.435C228.172 227.697 218.123 224.828 207.522 224.827L265.59 124.25Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M295.719 132.859C305.326 138.406 312.78 145.77 318.081 154.95L260.013 255.527C254.712 246.347 247.258 238.983 237.651 233.436L295.719 132.859Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M387.218 217.608C391.227 210.66 393.527 202.874 394.117 194.25L336.049 294.827C335.459 303.451 333.159 311.237 329.15 318.185L387.218 217.608Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M245.211 132.577C248.413 127.03 255.204 124.257 265.584 124.258L207.516 224.835C197.136 224.834 190.345 227.607 187.143 233.154L245.211 132.577Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M318.094 154.945C322.842 163.17 324.002 171.107 321.573 178.757L263.505 279.334C265.934 271.684 264.774 263.746 260.026 255.522L318.094 154.945Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M176.925 96.6737C180.127 91.1249 184.776 86.4503 190.871 82.6499L132.803 183.227C126.708 187.027 122.059 191.702 118.857 197.25L176.925 96.6737Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M387.226 217.606C385.989 219.749 384.59 221.813 383.028 223.797L324.96 324.373C326.522 322.39 327.921 320.326 329.157 318.183L387.226 217.606Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M317.269 188.408C319.087 185.262 320.519 182.045 321.562 178.758L263.494 279.335C262.451 282.622 261.019 285.839 259.201 288.985L317.269 188.408Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M245.208 132.573C241.895 137.928 243 145.387 248.522 154.95L190.454 255.527C184.932 245.964 183.827 238.505 187.14 233.15L245.208 132.573Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M176.93 96.6719C174.331 101.175 172.686 106.255 171.993 111.91L113.925 212.487C114.618 206.831 116.263 201.752 118.862 197.249L176.93 96.6719Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M317.266 188.413C314.853 192.589 311.757 196.64 307.978 200.566L249.91 301.143C253.689 297.216 256.785 293.166 259.198 288.99L317.266 188.413Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M464.198 304.708L435.375 254.789L377.307 355.366L406.13 405.285L464.198 304.708Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M353.209 254.787C366.68 242.548 376.618 232.22 383.023 223.805L324.955 324.382C318.55 332.797 308.612 343.124 295.141 355.364L353.209 254.787Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M435.37 254.787L353.212 254.784L295.144 355.361L377.302 355.364L435.37 254.787Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M183.921 154.947L248.521 154.95L190.453 255.527L125.853 255.524L183.921 154.947Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M171.992 111.914C170.668 124.537 174.643 138.881 183.92 154.947L125.852 255.524C116.575 239.458 112.599 225.114 113.924 212.491L171.992 111.914Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M307.987 200.562C301.251 207.256 291.203 216.244 277.842 227.528L219.774 328.105C233.135 316.821 243.183 307.832 249.919 301.139L307.987 200.562Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M15.5469 75.1797L44.5359 125.386L-13.5321 225.963L-42.5212 175.756L15.5469 75.1797Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M277.836 227.536C264.033 238.82 253.708 247.904 246.862 254.789L188.794 355.366C195.64 348.481 205.965 339.397 219.768 328.113L277.836 227.536Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M275.358 304.706L464.189 304.713L406.12 405.29L217.29 405.283L275.358 304.706Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M44.5279 125.39L67.3864 125.39L9.31834 225.967L-13.5401 225.966L44.5279 125.39Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M101.341 75.1911L233.863 304.705L175.795 405.282L43.2733 175.768L101.341 75.1911ZM15.5431 75.19L-42.525 175.767L43.277 175.77L101.345 75.1932L15.5431 75.19Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M246.866 254.784L246.534 254.784L188.466 355.361L188.798 355.361L246.866 254.784Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M246.539 254.781L275.362 304.701L217.294 405.277L188.471 355.358L246.539 254.781Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M67.3906 125.391L170.923 304.698L112.855 405.275L9.32257 225.967L67.3906 125.391Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                            <path d="M170.921 304.699L233.865 304.701L175.797 405.278L112.853 405.276L170.921 304.699Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="bevel" />
-                        </g>
-                        <g style="mix-blend-mode: hard-light" class="transition-all delay-300 translate-y-0 opacity-100 duration-750 starting:opacity-0 starting:translate-y-4">
-                            <path d="M246.544 254.79L246.875 254.79C253.722 247.905 264.046 238.82 277.849 227.537C291.21 216.253 301.259 207.264 307.995 200.57C314.62 193.685 319.147 186.418 321.577 178.768C324.006 171.117 322.846 163.18 318.097 154.956C312.796 145.775 305.342 138.412 295.735 132.865C286.238 127.127 276.189 124.258 265.588 124.257C255.208 124.257 248.416 127.03 245.214 132.576C241.902 137.931 243.006 145.39 248.528 154.953L183.928 154.951C174.652 138.885 170.676 124.541 172 111.918C173.546 99.2946 179.84 89.5408 190.882 82.6559C202.035 75.5798 216.887 72.0421 235.439 72.0428C254.874 72.0435 274.144 75.5825 293.248 82.6598C312.242 89.5457 329.579 99.3005 345.261 111.924C360.942 124.548 373.421 138.892 382.697 154.958C391.311 169.877 395.121 182.978 394.128 194.262C393.355 205.546 389.656 215.396 383.031 223.811C376.627 232.226 366.688 242.554 353.217 254.794L435.375 254.797L464.198 304.716L275.367 304.709L246.544 254.79Z" fill="#F0ACB8" />
-                            <path d="M246.544 254.79L246.875 254.79C253.722 247.905 264.046 238.82 277.849 227.537C291.21 216.253 301.259 207.264 307.995 200.57C314.62 193.685 319.147 186.418 321.577 178.768C324.006 171.117 322.846 163.18 318.097 154.956C312.796 145.775 305.342 138.412 295.735 132.865C286.238 127.127 276.189 124.258 265.588 124.257C255.208 124.257 248.416 127.03 245.214 132.576C241.902 137.931 243.006 145.39 248.528 154.953L183.928 154.951C174.652 138.885 170.676 124.541 172 111.918C173.546 99.2946 179.84 89.5408 190.882 82.6559C202.035 75.5798 216.887 72.0421 235.439 72.0428C254.874 72.0435 274.144 75.5825 293.248 82.6598C312.242 89.5457 329.579 99.3005 345.261 111.924C360.942 124.548 373.421 138.892 382.697 154.958C391.311 169.877 395.121 182.978 394.128 194.262C393.355 205.546 389.656 215.396 383.031 223.811C376.627 232.226 366.688 242.554 353.217 254.794L435.375 254.797L464.198 304.716L275.367 304.709L246.544 254.79Z" stroke="#1B1B18" stroke-width="1" stroke-linejoin="round" />
-                        </g>
-                        <g style="mix-blend-mode: hard-light" class="transition-all delay-300 translate-y-0 opacity-100 duration-750 starting:opacity-0 starting:translate-y-4">
-                            <path d="M67.41 125.402L44.5515 125.401L15.5625 75.1953L101.364 75.1985L233.886 304.712L170.942 304.71L67.41 125.402Z" fill="#F0ACB8" />
-                            <path d="M67.41 125.402L44.5515 125.401L15.5625 75.1953L101.364 75.1985L233.886 304.712L170.942 304.71L67.41 125.402Z" stroke="#1B1B18" stroke-width="1" />
-                        </g>
-                    </svg>
+        :where(.is-layout-flex) {
+            gap: 0.5em;
+        }
 
-                    {{-- Dark Mode 12 SVG --}}
-                    <svg class="w-[448px] max-w-none relative -mt-[4.9rem] -ml-8 lg:ml-0 lg:-mt-[6.6rem] hidden dark:block" viewBox="0 0 440 376" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g class="transition-all delay-300 translate-y-0 opacity-100 duration-750 starting:opacity-0 starting:translate-y-4">
-                            <path d="M188.263 355.73L188.595 355.73C195.441 348.845 205.766 339.761 219.569 328.477C232.93 317.193 242.978 308.205 249.714 301.511C256.34 294.626 260.867 287.358 263.296 279.708C265.725 272.058 264.565 264.121 259.816 255.896C254.516 246.716 247.062 239.352 237.454 233.805C227.957 228.067 217.908 225.198 207.307 225.198C196.927 225.197 190.136 227.97 186.934 233.516C183.621 238.872 184.726 246.331 190.247 255.894L125.647 255.891C116.371 239.825 112.395 225.481 113.72 212.858C115.265 200.235 121.559 190.481 132.602 183.596C143.754 176.52 158.607 172.982 177.159 172.983C196.594 172.984 215.863 176.523 234.968 183.6C253.961 190.486 271.299 200.241 286.98 212.864C302.661 225.488 315.14 239.833 324.416 255.899C333.03 270.817 336.841 283.918 335.847 295.203C335.075 306.487 331.376 316.336 324.75 324.751C318.346 333.167 308.408 343.494 294.936 355.734L377.094 355.737L405.917 405.656L217.087 405.649L188.263 355.73Z" fill="black"/>
-                            <path d="M9.11884 226.339L-13.7396 226.338L-42.7286 176.132L43.0733 176.135L175.595 405.649L112.651 405.647L9.11884 226.339Z" fill="black"/>
-                            <path d="M188.263 355.73L188.595 355.73C195.441 348.845 205.766 339.761 219.569 328.477C232.93 317.193 242.978 308.205 249.714 301.511C256.34 294.626 260.867 287.358 263.296 279.708C265.725 272.058 264.565 264.121 259.816 255.896C254.516 246.716 247.062 239.352 237.454 233.805C227.957 228.067 217.908 225.198 207.307 225.198C196.927 225.197 190.136 227.97 186.934 233.516C183.621 238.872 184.726 246.331 190.247 255.894L125.647 255.891C116.371 239.825 112.395 225.481 113.72 212.858C115.265 200.235 121.559 190.481 132.602 183.596C143.754 176.52 158.607 172.982 177.159 172.983C196.594 172.984 215.863 176.523 234.968 183.6C253.961 190.486 271.299 200.241 286.98 212.864C302.661 225.488 315.14 239.833 324.416 255.899C333.03 270.817 336.841 283.918 335.847 295.203C335.075 306.487 331.376 316.336 324.75 324.751C318.346 333.167 308.408 343.494 294.936 355.734L377.094 355.737L405.917 405.656L217.087 405.649L188.263 355.73Z" stroke="#FF750F" stroke-width="1"/>
-                            <path d="M9.11884 226.339L-13.7396 226.338L-42.7286 176.132L43.0733 176.135L175.595 405.649L112.651 405.647L9.11884 226.339Z" stroke="#FF750F" stroke-width="1"/>
-                            <path d="M204.592 327.449L204.923 327.449C211.769 320.564 222.094 311.479 235.897 300.196C249.258 288.912 259.306 279.923 266.042 273.23C272.668 266.345 277.195 259.077 279.624 251.427C282.053 243.777 280.893 235.839 276.145 227.615C270.844 218.435 263.39 211.071 253.782 205.524C244.285 199.786 234.236 196.917 223.635 196.916C213.255 196.916 206.464 199.689 203.262 205.235C199.949 210.59 201.054 218.049 206.575 227.612L141.975 227.61C132.699 211.544 128.723 197.2 130.048 184.577C131.593 171.954 137.887 162.2 148.93 155.315C160.083 148.239 174.935 144.701 193.487 144.702C212.922 144.703 232.192 148.242 251.296 155.319C270.289 162.205 287.627 171.96 303.308 184.583C318.989 197.207 331.468 211.552 340.745 227.618C349.358 242.536 353.169 255.637 352.175 266.921C351.403 278.205 347.704 288.055 341.078 296.47C334.674 304.885 324.736 315.213 311.264 327.453L393.422 327.456L422.246 377.375L233.415 377.368L204.592 327.449Z" fill="#391800"/>
-                            <path d="M25.447 198.058L2.58852 198.057L-26.4005 147.851L59.4015 147.854L191.923 377.368L128.979 377.365L25.447 198.058Z" fill="#391800"/>
-                            <path d="M204.592 327.449L204.923 327.449C211.769 320.564 222.094 311.479 235.897 300.196C249.258 288.912 259.306 279.923 266.042 273.23C272.668 266.345 277.195 259.077 279.624 251.427C282.053 243.777 280.893 235.839 276.145 227.615C270.844 218.435 263.39 211.071 253.782 205.524C244.285 199.786 234.236 196.917 223.635 196.916C213.255 196.916 206.464 199.689 203.262 205.235C199.949 210.59 201.054 218.049 206.575 227.612L141.975 227.61C132.699 211.544 128.723 197.2 130.048 184.577C131.593 171.954 137.887 162.2 148.93 155.315C160.083 148.239 174.935 144.701 193.487 144.702C212.922 144.703 232.192 148.242 251.296 155.319C270.289 162.205 287.627 171.96 303.308 184.583C318.989 197.207 331.468 211.552 340.745 227.618C349.358 242.536 353.169 255.637 352.175 266.921C351.403 278.205 347.704 288.055 341.078 296.47C334.674 304.885 324.736 315.213 311.264 327.453L393.422 327.456L422.246 377.375L233.415 377.368L204.592 327.449Z" stroke="#FF750F" stroke-width="1"/>
-                            <path d="M25.447 198.058L2.58852 198.057L-26.4005 147.851L59.4015 147.854L191.923 377.368L128.979 377.365L25.447 198.058Z" stroke="#FF750F" stroke-width="1"/>
-                        </g>
-                        <g class="transition-all delay-300 translate-y-0 opacity-100 duration-750 starting:opacity-0 starting:translate-y-4" style="mix-blend-mode:hard-light">
-                            <path d="M217.342 305.363L217.673 305.363C224.519 298.478 234.844 289.393 248.647 278.11C262.008 266.826 272.056 257.837 278.792 251.144C285.418 244.259 289.945 236.991 292.374 229.341C294.803 221.691 293.643 213.753 288.895 205.529C283.594 196.349 276.14 188.985 266.532 183.438C257.035 177.7 246.986 174.831 236.385 174.83C226.005 174.83 219.214 177.603 216.012 183.149C212.699 188.504 213.804 195.963 219.325 205.527L154.725 205.524C145.449 189.458 141.473 175.114 142.798 162.491C144.343 149.868 150.637 140.114 161.68 133.229C172.833 126.153 187.685 122.615 206.237 122.616C225.672 122.617 244.942 126.156 264.046 133.233C283.039 140.119 300.377 149.874 316.058 162.497C331.739 175.121 344.218 189.466 353.495 205.532C362.108 220.45 365.919 233.551 364.925 244.835C364.153 256.12 360.454 265.969 353.828 274.384C347.424 282.799 337.486 293.127 324.014 305.367L406.172 305.37L434.996 355.289L246.165 355.282L217.342 305.363Z" fill="#733000"/>
-                            <path d="M38.197 175.972L15.3385 175.971L-13.6505 125.765L72.1515 125.768L204.673 355.282L141.729 355.279L38.197 175.972Z" fill="#733000"/>
-                            <path d="M217.342 305.363L217.673 305.363C224.519 298.478 234.844 289.393 248.647 278.11C262.008 266.826 272.056 257.837 278.792 251.144C285.418 244.259 289.945 236.991 292.374 229.341C294.803 221.691 293.643 213.753 288.895 205.529C283.594 196.349 276.14 188.985 266.532 183.438C257.035 177.7 246.986 174.831 236.385 174.83C226.005 174.83 219.214 177.603 216.012 183.149C212.699 188.504 213.804 195.963 219.325 205.527L154.725 205.524C145.449 189.458 141.473 175.114 142.798 162.491C144.343 149.868 150.637 140.114 161.68 133.229C172.833 126.153 187.685 122.615 206.237 122.616C225.672 122.617 244.942 126.156 264.046 133.233C283.039 140.119 300.377 149.874 316.058 162.497C331.739 175.121 344.218 189.466 353.495 205.532C362.108 220.45 365.919 233.551 364.925 244.835C364.153 256.12 360.454 265.969 353.828 274.384C347.424 282.799 337.486 293.127 324.014 305.367L406.172 305.37L434.996 355.289L246.165 355.282L217.342 305.363Z" stroke="#FF750F" stroke-width="1"/>
-                            <path d="M38.197 175.972L15.3385 175.971L-13.6505 125.765L72.1515 125.768L204.673 355.282L141.729 355.279L38.197 175.972Z" stroke="#FF750F" stroke-width="1"/>
-                        </g>
-                        <g class="transition-all delay-300 translate-y-0 opacity-100 duration-750 starting:opacity-0 starting:translate-y-4">
-                            <path d="M217.342 305.363L217.673 305.363C224.519 298.478 234.844 289.393 248.647 278.11C262.008 266.826 272.056 257.837 278.792 251.144C285.418 244.259 289.945 236.991 292.374 229.341C294.803 221.691 293.643 213.753 288.895 205.529C283.594 196.349 276.14 188.985 266.532 183.438C257.035 177.7 246.986 174.831 236.385 174.83C226.005 174.83 219.214 177.603 216.012 183.149C212.699 188.504 213.804 195.963 219.325 205.527L154.726 205.524C145.449 189.458 141.473 175.114 142.798 162.491C144.343 149.868 150.637 140.114 161.68 133.229C172.833 126.153 187.685 122.615 206.237 122.616C225.672 122.617 244.942 126.156 264.046 133.233C283.039 140.119 300.377 149.874 316.058 162.497C331.739 175.121 344.218 189.466 353.495 205.532C362.108 220.45 365.919 233.551 364.925 244.835C364.153 256.12 360.454 265.969 353.828 274.384C347.424 282.799 337.486 293.127 324.014 305.367L406.172 305.37L434.996 355.289L246.165 355.282L217.342 305.363Z" stroke="#FF750F" stroke-width="1"/>
-                            <path d="M38.197 175.972L15.3385 175.971L-13.6505 125.765L72.1515 125.768L204.673 355.282L141.729 355.279L38.197 175.972Z" stroke="#FF750F" stroke-width="1"/>
-                        </g>
-                        <g class="transition-all delay-300 translate-y-0 opacity-100 duration-750 starting:opacity-0 starting:translate-y-4">
-                            <path d="M188.467 355.363L188.798 355.363C195.644 348.478 205.969 339.393 219.772 328.11C233.133 316.826 243.181 307.837 249.917 301.144C253.696 297.217 256.792 293.166 259.205 288.991C261.024 285.845 262.455 282.628 263.499 279.341C265.928 271.691 264.768 263.753 260.02 255.529C254.719 246.349 247.265 238.985 237.657 233.438C228.16 227.7 218.111 224.831 207.51 224.83C197.13 224.83 190.339 227.603 187.137 233.149C183.824 238.504 184.929 245.963 190.45 255.527L125.851 255.524C116.574 239.458 112.598 225.114 113.923 212.491C114.615 206.836 116.261 201.756 118.859 197.253C122.061 191.704 126.709 187.03 132.805 183.229C143.958 176.153 158.81 172.615 177.362 172.616C196.797 172.617 216.067 176.156 235.171 183.233C254.164 190.119 271.502 199.874 287.183 212.497C302.864 225.121 315.343 239.466 324.62 255.532C333.233 270.45 337.044 283.551 336.05 294.835C335.46 303.459 333.16 311.245 329.151 318.194C327.915 320.337 326.515 322.4 324.953 324.384C318.549 332.799 308.611 343.127 295.139 355.367L377.297 355.37L406.121 405.289L217.29 405.282L188.467 355.363Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M9.32197 225.972L-13.5365 225.971L-42.5255 175.765L43.2765 175.768L175.798 405.282L112.854 405.279L9.32197 225.972Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M345.247 111.915C329.566 99.2919 312.229 89.5371 293.235 82.6512L235.167 183.228C254.161 190.114 271.498 199.869 287.179 212.492L345.247 111.915Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M382.686 154.964C373.41 138.898 360.931 124.553 345.25 111.93L287.182 212.506C302.863 225.13 315.342 239.475 324.618 255.541L382.686 154.964Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M293.243 82.6472C274.139 75.57 254.869 72.031 235.434 72.0303L177.366 172.607C196.801 172.608 216.071 176.147 235.175 183.224L293.243 82.6472Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M394.118 194.257C395.112 182.973 391.301 169.872 382.688 154.953L324.619 255.53C333.233 270.448 337.044 283.55 336.05 294.834L394.118 194.257Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M235.432 72.0311C216.88 72.0304 202.027 75.5681 190.875 82.6442L132.806 183.221C143.959 176.145 158.812 172.607 177.363 172.608L235.432 72.0311Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M265.59 124.25C276.191 124.251 286.24 127.12 295.737 132.858L237.669 233.435C228.172 227.697 218.123 224.828 207.522 224.827L265.59 124.25Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M295.719 132.859C305.326 138.406 312.78 145.77 318.081 154.95L260.013 255.527C254.712 246.347 247.258 238.983 237.651 233.436L295.719 132.859Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M387.218 217.608C391.227 210.66 393.527 202.874 394.117 194.25L336.049 294.827C335.459 303.451 333.159 311.237 329.15 318.185L387.218 217.608Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M245.211 132.577C248.413 127.03 255.204 124.257 265.584 124.258L207.516 224.835C197.136 224.834 190.345 227.607 187.143 233.154L245.211 132.577Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M318.094 154.945C322.842 163.17 324.002 171.107 321.573 178.757L263.505 279.334C265.934 271.684 264.774 263.746 260.026 255.522L318.094 154.945Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M176.925 96.6737C180.127 91.1249 184.776 86.4503 190.871 82.6499L132.803 183.227C126.708 187.027 122.059 191.702 118.857 197.25L176.925 96.6737Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M387.226 217.606C385.989 219.749 384.59 221.813 383.028 223.797L324.96 324.373C326.522 322.39 327.921 320.326 329.157 318.183L387.226 217.606Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M317.269 188.408C319.087 185.262 320.519 182.045 321.562 178.758L263.494 279.335C262.451 282.622 261.019 285.839 259.201 288.985L317.269 188.408Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M245.208 132.573C241.895 137.928 243 145.387 248.522 154.95L190.454 255.527C184.932 245.964 183.827 238.505 187.14 233.15L245.208 132.573Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M176.93 96.6719C174.331 101.175 172.686 106.255 171.993 111.91L113.925 212.487C114.618 206.831 116.263 201.752 118.862 197.249L176.93 96.6719Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M317.266 188.413C314.853 192.589 311.757 196.64 307.978 200.566L249.91 301.143C253.689 297.216 256.785 293.166 259.198 288.99L317.266 188.413Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M464.198 304.708L435.375 254.789L377.307 355.366L406.13 405.285L464.198 304.708Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M353.209 254.787C366.68 242.548 376.618 232.22 383.023 223.805L324.955 324.382C318.55 332.797 308.612 343.124 295.141 355.364L353.209 254.787Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M435.37 254.787L353.212 254.784L295.144 355.361L377.302 355.364L435.37 254.787Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M183.921 154.947L248.521 154.95L190.453 255.527L125.853 255.524L183.921 154.947Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M171.992 111.914C170.668 124.537 174.643 138.881 183.92 154.947L125.852 255.524C116.575 239.458 112.599 225.114 113.924 212.491L171.992 111.914Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M307.987 200.562C301.251 207.256 291.203 216.244 277.842 227.528L219.774 328.105C233.135 316.821 243.183 307.832 249.919 301.139L307.987 200.562Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M15.5469 75.1797L44.5359 125.386L-13.5321 225.963L-42.5212 175.756L15.5469 75.1797Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M277.836 227.536C264.033 238.82 253.708 247.904 246.862 254.789L188.794 355.366C195.64 348.481 205.965 339.397 219.768 328.113L277.836 227.536Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M275.358 304.706L464.189 304.713L406.12 405.29L217.29 405.283L275.358 304.706Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M44.5279 125.39L67.3864 125.39L9.31834 225.967L-13.5401 225.966L44.5279 125.39Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M101.341 75.1911L233.863 304.705L175.795 405.282L43.2733 175.768L101.341 75.1911ZM15.5431 75.19L-42.525 175.767L43.277 175.77L101.345 75.1932L15.5431 75.19Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M246.866 254.784L246.534 254.784L188.466 355.361L188.798 355.361L246.866 254.784Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M246.539 254.781L275.362 304.701L217.294 405.277L188.471 355.358L246.539 254.781Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M67.3906 125.391L170.923 304.698L112.855 405.275L9.32257 225.967L67.3906 125.391Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                            <path d="M170.921 304.699L233.865 304.701L175.797 405.278L112.853 405.276L170.921 304.699Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="bevel"/>
-                        </g>
-                        <g class="transition-all delay-300 translate-y-0 opacity-100 duration-750 starting:opacity-0 starting:translate-y-4" style="mix-blend-mode:hard-light">
-                            <path d="M246.544 254.79L246.875 254.79C253.722 247.905 264.046 238.82 277.849 227.537C291.21 216.253 301.259 207.264 307.995 200.57C314.62 193.685 319.147 186.418 321.577 178.768C324.006 171.117 322.846 163.18 318.097 154.956C312.796 145.775 305.342 138.412 295.735 132.865C286.238 127.127 276.189 124.258 265.588 124.257C255.208 124.257 248.416 127.03 245.214 132.576C241.902 137.931 243.006 145.39 248.528 154.953L183.928 154.951C174.652 138.885 170.676 124.541 172 111.918C173.546 99.2946 179.84 89.5408 190.882 82.6559C202.035 75.5798 216.887 72.0421 235.439 72.0428C254.874 72.0435 274.144 75.5825 293.248 82.6598C312.242 89.5457 329.579 99.3005 345.261 111.924C360.942 124.548 373.421 138.892 382.697 154.958C391.311 169.877 395.121 182.978 394.128 194.262C393.355 205.546 389.656 215.396 383.031 223.811C376.627 232.226 366.688 242.554 353.217 254.794L435.375 254.797L464.198 304.716L275.367 304.709L246.544 254.79Z" fill="#4B0600"/>
-                            <path d="M246.544 254.79L246.875 254.79C253.722 247.905 264.046 238.82 277.849 227.537C291.21 216.253 301.259 207.264 307.995 200.57C314.62 193.685 319.147 186.418 321.577 178.768C324.006 171.117 322.846 163.18 318.097 154.956C312.796 145.775 305.342 138.412 295.735 132.865C286.238 127.127 276.189 124.258 265.588 124.257C255.208 124.257 248.416 127.03 245.214 132.576C241.902 137.931 243.006 145.39 248.528 154.953L183.928 154.951C174.652 138.885 170.676 124.541 172 111.918C173.546 99.2946 179.84 89.5408 190.882 82.6559C202.035 75.5798 216.887 72.0421 235.439 72.0428C254.874 72.0435 274.144 75.5825 293.248 82.6598C312.242 89.5457 329.579 99.3005 345.261 111.924C360.942 124.548 373.421 138.892 382.697 154.958C391.311 169.877 395.121 182.978 394.128 194.262C393.355 205.546 389.656 215.396 383.031 223.811C376.627 232.226 366.688 242.554 353.217 254.794L435.375 254.797L464.198 304.716L275.367 304.709L246.544 254.79Z" stroke="#FF750F" stroke-width="1" stroke-linejoin="round"/>
-                        </g>
-                        <g class="transition-all delay-300 translate-y-0 opacity-100 duration-750 starting:opacity-0 starting:translate-y-4" style="mix-blend-mode:hard-light">
-                            <path d="M67.41 125.402L44.5515 125.401L15.5625 75.1953L101.364 75.1985L233.886 304.712L170.942 304.71L67.41 125.402Z" fill="#4B0600"/>
-                            <path d="M67.41 125.402L44.5515 125.401L15.5625 75.1953L101.364 75.1985L233.886 304.712L170.942 304.71L67.41 125.402Z" stroke="#FF750F" stroke-width="1"/>
-                        </g>
-                    </svg>
-                    <div class="absolute inset-0 rounded-t-lg lg:rounded-t-none lg:rounded-r-lg shadow-[inset_0px_0px_0px_1px_rgba(26,26,0,0.16)] dark:shadow-[inset_0px_0px_0px_1px_#fffaed2d]"></div>
-                </div>
-            </main>
+        :where(.is-layout-grid) {
+            gap: 0.5em;
+        }
+
+        body .is-layout-flex {
+            display: flex;
+        }
+
+        .is-layout-flex {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .is-layout-flex> :is(*, div) {
+            margin: 0;
+        }
+
+        body .is-layout-grid {
+            display: grid;
+        }
+
+        .is-layout-grid> :is(*, div) {
+            margin: 0;
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-columns.is-layout-grid) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-post-template.is-layout-flex) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-post-template.is-layout-grid) {
+            gap: 1.25em;
+        }
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+
+        :where(.wp-block-post-template.is-layout-flex) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-post-template.is-layout-grid) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-columns.is-layout-grid) {
+            gap: 2em;
+        }
+
+        :root :where(.wp-block-pullquote) {
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+    </style>
+    <link rel='stylesheet' id='contact-form-7-css'
+        href='{{asset('web-assets/css/plugins/contact-form-7/styles.ver6.0.5.css')}}'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-layout-css'
+        href='{{asset('web-assets/css/plugins/woocommerce/woocommerce-layout.ver9.7.1.css')}}'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-smallscreen-css'
+        href='{{asset('web-assets/css/plugins/woocommerce/woocommerce-smallscreen.ver9.7.1.css')}}'
+        type='text/css' media='only screen and (max-width: 768px)' />
+    <link rel='stylesheet' id='woocommerce-general-css'
+        href='{{asset('web-assets/css/plugins/woocommerce/woocommerce.ver9.7.1.css')}}'
+        type='text/css' media='all' />
+    <style id='woocommerce-inline-inline-css' type='text/css'>
+        .woocommerce form .form-row .required {
+            visibility: visible;
+        }
+    </style>
+    <link rel='stylesheet' id='brands-styles-css'
+        href='{{asset('web-assets/css/plugins/woocommerce/brands.ver9.7.1.css')}}' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='twentyseventeen-fonts-css'
+        href='https://fonts.googleapis.com/css?family=Libre+Franklin%3A300%2C300i%2C400%2C400i%2C600%2C600i%2C800%2C800i&amp;subset=latin%2Clatin-ext'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='twentyseventeen-style-css'
+        href='{{asset('web-assets/css/themes/style.ver6.7.2.css')}}' type='text/css' media='all' />
+    <script type="text/javascript" src="{{asset('web-assets/js/jquery/jquery.ver3.7.1.min.js')}}"
+        id="jquery-core-js"></script>
+    <script type="text/javascript"
+        src="{{asset('web-assets/js/jquery/jquery-migrate.ver3.4.1.min.js')}}"
+        id="jquery-migrate-js"></script>
+    <script type="text/javascript"
+        src="{{asset('web-assets/js/jquery/jquery.blockUI.ver2.7.0-wc.9.7.1.min.js')}}"
+        id="jquery-blockui-js" defer="defer" data-wp-strategy="defer"></script>
+    <script type="text/javascript"
+        src="{{asset('web-assets/js/js.cookie.ver2.1.4-wc.9.7.1.min.js')}}"
+        id="js-cookie-js" defer="defer" data-wp-strategy="defer"></script>
+    <script type="text/javascript" id="woocommerce-js-extra">
+        /* <![CDATA[ */
+        var woocommerce_params = { "ajax_url": "\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/?wc-ajax=%%endpoint%%", "i18n_password_show": "Show password", "i18n_password_hide": "Hide password" };
+        /* ]]> */
+    </script>
+    <script type="text/javascript"
+        src="{{asset('web-assets/js/plugins/woocommerce/woocommerce.ver9.7.1.min.js')}}"
+        id="woocommerce-js" defer="defer" data-wp-strategy="defer"></script>
+    <link rel="canonical" href="https://demo.cut2style.com/" />
+    <link rel='shortlink' href='https://demo.cut2style.com/' />
+    <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"
+        href="https://demo.cut2style.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.cut2style.com%2F" />
+    <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"
+        href="https://demo.cut2style.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.cut2style.com%2F&amp;format=xml" />
+    <noscript>
+        <style>
+            .woocommerce-product-gallery {
+                opacity: 1 !important;
+            }
+        </style>
+    </noscript>
+    <style class='wp-fonts-local' type='text/css'>
+        @font-face {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 300 900;
+            font-display: fallback;
+            src: url('{{asset('assets/fonts/Inter-VariableFont_slnt,wght.woff2')}}') format('woff2');
+            font-stretch: normal;
+        }
+
+        @font-face {
+            font-family: Cardo;
+            font-style: normal;
+            font-weight: 400;
+            font-display: fallback;
+            src: url('{{asset('assets/fonts/cardo_normal_400.woff2')}}') format('woff2');
+        }
+    </style>
+    <link rel="icon" href="{{asset('assets/images/favicon/cropped-fevicon-32x32.png')}}"
+        sizes="32x32" />
+    <link rel="icon" href="{{asset('assets/images/favicon/cropped-fevicon-192x192.png')}}"
+        sizes="192x192" />
+    <link rel="apple-touch-icon"
+        href="{{asset('assets/images/favicon/cropped-fevicon-180x180.png')}}" />
+    <meta name="msapplication-TileImage"
+        content="{{asset('assets/images/favicon/cropped-fevicon-270x270.png')}}" />
+    <style>
+        .gallery-cell {
+            width: 50%;
+            padding: 0px 2rem;
+        }
+
+        .testimonial {
+            text-align: center;
+            max-width: 850px;
+            margin: 50px auto 50px auto;
+            padding: 0 20px;
+        }
+
+        .testimonial-avatar {
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        .testimonial-quote {
+            display: block;
+            font-size: 18px;
+            font-weight: 300;
+            padding: 10px 0;
+        }
+
+        .main-gallery {
+            min-height: 310px;
+            height: 310px;
+        }
+
+        .testimonial-author {
+            display: block;
+            font-weight: 800;
+            color: #000;
+        }
+
+        .flickity-page-dots {
+            bottom: 25px;
+        }
+
+        .flickity-page-dots .dot.is-selected {
+            background: #7AA641;
+        }
+
+        .card-body.text-center a {
+            background: #000;
+            color: #fff !important;
+            padding: 7px 20px;
+            font-size: 16px;
+            border-radius: 20px;
+        }
+
+        .text-gray-700 {
+            color: #000 !important;
+            font-size: 20px !important;
+            height: 65px;
+        }
+
+        .col-12.col-md-3.aos-init.aos-animate.text-center {
+            width: 14.2%;
+            text-align: left !important;
+        }
+
+        .col-12.col-md-3.aos-init.aos-animate.text-center h3 {
+            font-size: 15px;
+        }
+
+        #prosbee .card-body.text-center {
+            padding: 10px;
+        }
+
+        .img-fluid.mb-5.w-100.mx-auto img {
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            padding: 5px;
+        }
+
+        .p-3.d-flex div span {
+            display: inline-block;
+            width: 100%;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .fs-xs.dis {
+            height: 0px !important;
+            padding: 0px !important;
+            margin: 0px !important;
+            line-height: 0px;
+        }
+
+        .icon.icon-shape.rounded-circle.bg-warning.text-white.mr-4 {
+            margin-right: 12px;
+            width: 75px;
+            height: 75px;
+            padding: 10px 0px;
+        }
+
+        .fs-xs.dis a {
+            font-size: 14px;
+            padding: 0px !important;
+            margin: 0px !important;
+            color: #090909;
+        }
+
+
+        @keyframes slide1 {
+
+            0%,
+            100% {
+                transform: translate(0, -10px);
+            }
+
+            50% {
+                transform: translate(0, 10px);
+            }
+        }
+
+        .arrow1 {
+            animation: slide1 1s ease-in-out infinite;
+        }
+
+        .demo-wrap:before {
+            content: ' ';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.3;
+            background-image: url("{{asset('assets/images/banner-bg.png')}}");
+            background-repeat: no-repeat;
+            background-position: 50% 0;
+            background-size: cover;
+            margin-top: 6rem;
+        }
+
+        .flickity-prev-next-button {
+            background-color: #000 !important;
+        }
+
+        .flickity-viewport {
+            overflow: hidden !important;
+        }
+
+        #app-logo {
+            border: 1px solid #444444;
+            border-radius: 5px;
+            padding: 5px;
+            width: 190px;
+        }
+    </style>
+</head>
+
+<body
+    class="home page-template page-template-home-template page-template-home-template-php page page-id-6 theme-alphax woocommerce-no-js twentyseventeen-front-page has-header-image page-two-column colors-light">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-12 text-center text-md-start">&nbsp;</div>
+            <div class="col-6 text-end d-none d-md-block">
+                <a class="classssnew" href="tel:1.855.4CUT2STYLE (428.8278)" target="_blank"
+                    style="   font-weight: 500;text-align: center;color: #000;padding: 1px 20px;font-size: 13px;">Ph. #
+                    1.855.4CUT2STYLE (428.8278)</a>
+            </div>
         </div>
+    </div>
 
-        @if (Route::has('login'))
-            <div class="h-14.5 hidden lg:block"></div>
-        @endif
-    </body>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top navbar-inverse">
+
+
+        <div class="container-fluid">
+
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">
+                <img src="{{asset('assets/images/logos.png')}}" class="navbar-brand-img"
+                    alt="cut2style Logo" style="margin-left: 1.9%;position: relative;top: -18px;">
+            </a>
+
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fe fe-x"></i>
+                </button>
+
+                <!-- Navigation -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarLandings" data-bs-toggle="dropdown" href="#"
+                            aria-haspopup="true" aria-expanded="false">Our World</a>
+                        <div class="dropdown-menu dropdown-menu-lg p-0 first" aria-labelledby="navbarLandings">
+                            <div class="row gx-0">
+
+                                <div class="col-12 col-lg-12">
+                                    <div class="dropdown-body">
+                                        <div class="row gx-0">
+                                            <div class="col-4">
+
+                                                <!-- Heading -->
+                                                <h6 class="dropdown-header">
+                                                    ABOUT C<span class="two">2</span>S
+                                                </h6>
+
+                                                <!-- List -->
+                                                <a class="dropdown-item" href="about.html">Welcome to C<span
+                                                        class="two">2</span>S</a>
+                                                <a class="dropdown-item" href="people-matter.html">People Matter</a>
+                                                <a class="dropdown-item" href="todays-trend.html">Today's Trend</a>
+                                                <a class="dropdown-item" href="#"><em>Bee's</em> Philosophy</a>
+                                                <a class="dropdown-item" href="#"><em>Bee's</em> Mission</a>
+                                                <a class="dropdown-item" href="#">7 Reasons</a>
+                                                <a class="dropdown-item" href="#">Reviews</a>
+                                                <a class="dropdown-item" href="#">FAQ</a>
+
+                                            </div>
+
+                                            <div class="col-4">
+
+                                                <!-- Heading -->
+                                                <h6 class="dropdown-header">How To</h6>
+
+                                                <!-- List -->
+                                                <a class="dropdown-item" href="#">
+                                                    Share Order</a>
+                                                <a class="dropdown-item" href="#">
+                                                    Join <em>Bee</em>Club</a>
+                                                <a class="dropdown-item" href="#">
+                                                    Open <em>Bee</em>Card</a>
+                                                <a class="dropdown-item" href="#">
+                                                    Buy Memberships</a>
+                                                <a class="dropdown-item" href="#">Shop <em>Bee</em>Boutique</a>
+                                                <a class="dropdown-item" href="#">
+                                                    Contact Us</a>
+
+                                            </div>
+
+                                            <div class="col-4">
+
+                                                <!-- Heading -->
+                                                <h6 class="dropdown-header"><u>My Home</u> / OS</h6>
+
+                                                <!-- List -->
+                                                <a class="dropdown-item" href="#">
+                                                    Who We Are</a>
+                                                <a class="dropdown-item" href="#">
+                                                    Our Philosophy</a>
+                                                <a class="dropdown-item" href="#">
+                                                    Our Mission</a>
+                                                <a class="dropdown-item" href="#">
+                                                    Our Promise</a>
+                                                <a class="dropdown-item" href="#">
+                                                    How It Works</a>
+                                                <a class="dropdown-item" href="#">
+                                                    Must Ask Questions</a>
+                                                <a class="dropdown-item" href="#">
+                                                    Reviews </a>
+                                                <a class="dropdown-item" href="#">
+                                                    FAQ</a>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- / .row -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / .row -->
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarPages" data-bs-toggle="dropdown" href="#"
+                            aria-haspopup="true" aria-expanded="false"
+                            style="color: #e00505;text-decoration: underline;">Services</a>
+                        <div class="dropdown-menu dropdown-menu-xxl first" aria-labelledby="navbarPages">
+                            <div class="row gx-0">
+                                <div class="col-5">
+                                    <div class="row gx-0">
+                                        <div class="col-12 col-lg-6">
+                                            <h6 class="dropdown-header"><em
+                                                    style="text-transform: capitalize;">Bee</em>Pro</h6>
+                                            <a class="dropdown-item" href="#">Hair Styling</a>
+                                            <a class="dropdown-item" href="#">Barbering</a>
+                                            <a class="dropdown-item" href="#">Nail Work</a>
+                                            <a class="dropdown-item" href="#">MakeUp</a>
+                                            <a class="dropdown-item" href="#">Face Treatment</a>
+                                            <a class="dropdown-item" href="#">Eyebrows & Lushes</a>
+                                            <a class="dropdown-item" href="#">Waxing</a>
+                                            <a class="dropdown-item" href="#">Tattoo & Piercing</a>
+                                            <a class="dropdown-item" href="#">Med Spa</a>
+                                            <a class="dropdown-item" href="#">Tanning</a>
+                                            <a class="dropdown-item" href="#">Acupuncture</a>
+                                            <a class="dropdown-item" href="#">Body Treatment</a>
+                                            <a class="dropdown-item" href="#">Massage</a>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <h6 class="dropdown-header">&nbsp;</h6>
+                                            <a class="dropdown-item" href="#">Physiotherapy</a>
+                                            <a class="dropdown-item" href="#">Infusion Therapy</a>
+                                            <a class="dropdown-item" href="#">Personal Training</a>
+                                            <a class="dropdown-item" href="#">Pet Grooming</a>
+                                            <a class="dropdown-item" href="#">Neuropathy </a>
+                                            <a class="dropdown-item" href="#">Yoga </a>
+                                            <a class="dropdown-item" href="#">Dental </a>
+                                            <a class="dropdown-item" href="#">Optometry </a>
+                                            <a class="dropdown-item" href="#">Veterinary </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="row gx-0">
+                                        <div class="col-12 col-lg-6">
+                                            <h6 class="dropdown-header"><u>MY HOME</u> Services</h6>
+                                            <a class="dropdown-item" href="#">Popular</a>
+                                            <a class="dropdown-item" href="#">A/C, Heating & Ventilation</a>
+                                            <a class="dropdown-item" href="#">Alarm & Security</a>
+                                            <a class="dropdown-item" href="#">Appliances & Equipment</a>
+                                            <a class="dropdown-item" href="#">Backyard & Front</a>
+                                            <a class="dropdown-item" href="#">Cleaning & Restoration</a>
+                                            <a class="dropdown-item" href="#">Concrete & Cement</a>
+                                            <a class="dropdown-item" href="#">Doors & Windows</a>
+                                            <a class="dropdown-item" href="#">Electrical</a>
+                                            <a class="dropdown-item" href="#">Flooring</a>
+                                            <a class="dropdown-item" href="#">Home Building</a>
+                                            <a class="dropdown-item" href="#">Painting</a>
+                                            <a class="dropdown-item" href="#">Plumbing</a>
+                                            <a class="dropdown-item" href="#">Miscellaneous</a>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+
+                                            <h6 class="dropdown-header"><u>Other Services</u></h6>
+                                            <a class="dropdown-item" href="#">Automotive</a>
+                                            <a class="dropdown-item" href="#">Education</a>
+                                            <a class="dropdown-item" href="#">Events</a>
+                                            <a class="dropdown-item" href="#">Finances</a>
+                                            <a class="dropdown-item" href="#">Insurance</a>
+                                            <a class="dropdown-item" href="#">Legal</a>
+                                            <a class="dropdown-item" href="#">Pets</a>
+                                            <a class="dropdown-item" href="#">Real Estate</a>
+                                            <a class="dropdown-item" href="#">Technology</a>
+                                            <a class="dropdown-item" href="#">Travel</a>
+                                            <a class="dropdown-item" href="#">Wellness</a>
+                                            <a class="dropdown-item" href="#">Miscellaneous</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="row gx-0">
+                                        <div class="col-12 col-lg-12">
+                                            <h6 class="dropdown-header">Global Shop</h6>
+                                            <a class="dropdown-item" href="#">A-Z brands</a>
+                                            <a class="dropdown-item" href="#">Hair</a>
+                                            <a class="dropdown-item" href="#">Skin</a>
+                                            <a class="dropdown-item" href="#">Makeup</a>
+                                            <a class="dropdown-item" href="#">Beth & Beauty</a>
+                                            <a class="dropdown-item" href="#">Fragrances & Gifts</a>
+                                            <a class="dropdown-item" href="#">Diet / Meals</a>
+                                            <a class="dropdown-item" href="#">Health Wellness</a>
+                                            <a class="dropdown-item" href="#">Home Beauty</a>
+                                            <a class="dropdown-item" href="#">and More</a>
+                                            <a target="_blank" class="dropdown-item" href="#">Pro Corner</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarrewards" data-bs-toggle="dropdown" href="#"
+                            aria-haspopup="true" aria-expanded="false">
+                            Rewards & Offers
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarrewards">
+
+                            <a class="dropdown-item" href="#">More 4 Less</a>
+                            <a class="dropdown-item" href="#">Extra '5'</a>
+                            <a class="dropdown-item" href="#">Extra '10'</a>
+                            <a class="dropdown-item" href="#">Membership '10'</a>
+                            <a class="dropdown-item" href="#">Add-Ons '10'</a>
+                            <a class="dropdown-item" href="#">Share Order '10'</a>
+                            <a class="dropdown-item" href="#">Birthday '10'</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarpress" data-bs-toggle="dropdown" href="#"
+                            aria-haspopup="true" aria-expanded="false">Musts & Tips
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarpress">
+
+                            <a class="dropdown-item" href="#">Must-Haves</a>
+                            <a class="dropdown-item" href="#">Must-Knows</a>
+                            <a class="dropdown-item" href="#">Blog</a>
+                            <a class="dropdown-item" href="#">In Style</a>
+                            <a class="dropdown-item" href="#"><u>MY HOME</u></a>
+                            <a class="dropdown-item" href="#">Beauty & Wellness</a>
+                            <a class="dropdown-item" href="#">Travel & Vacation</a>
+                            <a class="dropdown-item" href="#">Business</a>
+                            <a class="dropdown-item" href="#">and Beyond…</a>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarLandings" data-bs-toggle="dropdown" href="#"
+                            aria-haspopup="true" aria-expanded="false">
+                            Business
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg p-0" aria-labelledby="navbarLandings">
+                            <div class="row gx-0">
+
+                                <div class="col-12 col-lg-12">
+                                    <div class="dropdown-body">
+                                        <div class="row gx-0">
+                                            <div class="col-7">
+
+                                                <!-- Heading -->
+                                                <h6 class="dropdown-header">
+                                                    Pro Corner<br><span
+                                                        style="font-size: 12px;font-weight: 100;text-transform: capitalize;font-family: 'Arial' !important;">(Become
+                                                        Affiliate)</span>
+                                                </h6>
+                                                <a class="dropdown-item" href="#">
+                                                    Introduction</a>
+                                                <a class="dropdown-item" href="#">
+                                                    How Much <em>Bee</em>Pro</a>
+                                                <a class="dropdown-item" href="#">
+                                                    Become <em>Bee</em>Pro</a>
+                                                <a class="dropdown-item" href="#">
+                                                    Become <u>MY HOME</u> / OS Pros</a>
+                                                <a class="dropdown-item" href="#">
+                                                    Become OSGS Pro</a>
+                                                <a class="dropdown-item" href="#">
+                                                    Pro Affiliate FAQ</a>
+
+
+                                            </div>
+                                            <div class="col-5">
+
+                                                <!-- Heading -->
+                                                <h6 class="dropdown-header">
+                                                    MY Business<br><span
+                                                        style="font-size: 12px;font-weight: 100;text-transform: capitalize;font-family: 'Arial' !important;">(Affiliates
+                                                        Helper)</span>
+                                                </h6>
+
+                                                <a class="dropdown-item" href="#">News &amp; Tips</a>
+                                                <a class="dropdown-item" href="#"><em>Bee</em>Pro Data</a>
+                                                <a class="dropdown-item" href="#"><em>Bee</em>Pro Helper</a>
+                                                <a class="dropdown-item" href="#"><u>MY HOME</u> / OS Data</a>
+                                                <a class="dropdown-item" href="#"><u>MY HOME</u> / OS Helper</a>
+                                                <a class="dropdown-item" href="#">OSGS Data</a>
+                                                <a class="dropdown-item" href="#">OSGS Helper</a>
+                                                <a class="dropdown-item" href="#">Legal</a>
+                                                <a class="dropdown-item" href="#" target="_blank">Administrator</a>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- / .row -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / .row -->
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link book" href="#">
+                            <srong style="border: 1px solid #767676;padding: 1px 4px;border-radius: 2px;">Book Now
+                            </srong>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link book" target="_blank" href="#">Sign in</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link book" href="#">My Faves</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link book" href="#">Cart</a>
+                    </li>
+                </ul>
+
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- WELCOME -->
+    <section class="pt-4 pt-md-7 demo-wrap">
+        <div class="containers" style="overflow: hidden">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
+                    <!-- Heading -->
+                    <h1 style="font-weight: 900;font-size: 2.6rem;color:#000;"
+                        class="display-3 text-center text-md-start">
+                        Your Ultimate Solution For Quality Local Services and Global Shopping - Delivered!
+                    </h1>
+                    <!-- Text -->
+                    <p class="lead text-center text-md-start text-body-secondary mb-2 mb-lg-2"
+                        style="font-size: 2rem;color: #555 !important;">Get Hooked With C<span class="two">2</span>S
+                        Today!</p>
+                    <!-- Buttons -->
+                    <div class="text-left text-md-left">
+                        <a href="#" style="color:#000;"><span
+                                style="font-size: 20px;font-weight: bold;display: inline-grid;text-align: center;"><span
+                                    style="font-size: 18px;margin-top: -25px;display: block;position: absolute;margin-left: 55px;">Scroll
+                                    Down</span>To See Our Services <i style="color:#e00505"
+                                    class="fe fe-arrow-down arrow1"></i> </span></a>
+                        <img src="{{asset('assets/images/logowithtext.png')}}" alt="logo"
+                            style="width: 80px;vertical-align: -30px;margin-left: 0.5rem;"> <a
+                            style="font-size: 20px;color: #000;font-weight: 600;padding: 10px 15px;text-decoration: underline;"
+                            href="#" target="_blank" class="">Then Start Here</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 col-lg-6 order-md-2 pb-3">
+                    <!-- Image -->
+                    <img src="{{asset('assets/images/banner1.png')}}"
+                        class="img-fluid mw-md-150 mw-lg-110 mb-6 mb-md-0" alt="..." data-aos="fade-up" style="width: 100%;"
+                        data-aos-delay="100">
+                </div>
+            </div>
+            <!-- / .row -->
+        </div>
+        <!-- / .container -->
+    </section>
+    <section class="py-3 py-md-5" style="background: #000;">
+        <div class="container">
+            <div class="row">
+                <!--   <div class="col-12 text-center">
+          
+            <a href="#prosbee" class=" btn btn-white btn-rounded-circle shadow mt-n12 mt-md-n14" data-scroll="">
+              <i style="color:#e00505" class="fe fe-arrow-down arrow1"></i>
+            </a>
+          </div> -->
+            </div>
+            <!-- / .row -->
+            <div class="row  justify-content-center" id="services" style="padding: 20px;">
+                <div class="col-12 pb-md-7  text-center">
+                    <!-- Heading -->
+                    <h2 class="fw-bold" style="color: #fff;">Why Cut<span class="two">2</span>Style / C<span
+                            class="two">2</span>S </h2>
+                </div>
+                <div class="col-12 col-md-4 aos-init aos-animate text-center" data-aos="fade-up">
+                    <!-- Icon -->
+                    <div class="icon text-primary mb-5">
+                        <img class="img-fluid" src="{{asset('assets/images/whyc2s/van.png')}}" style="width: 130px;">
+                    </div>
+                    <!-- Heading -->
+                    <h3
+                        style="color: #fff;border-bottom: 1px solid #353535;padding-bottom: 0.5rem;text-align: center;text-transform: uppercase;font-size: 15px;">
+                        Convenience</h3>
+                    <p style="color: #d2d2d2;font-size: 13px;margin-top: 0.5rem;">Personalized services without the
+                        hassle of traveling </p>
+                </div>
+                <div class="col-12 col-md-4 aos-init aos-animate text-center" data-aos="fade-up" data-aos-delay="50">
+                    <!-- Icon -->
+                    <div class="icon text-primary mb-5">
+                        <img class="img-fluid" src="{{asset('assets/images/whyc2s/quality-img.png')}}">
+                    </div>
+                    <!-- Heading -->
+                    <h3
+                        style="color: #fff;border-bottom: 1px solid #353535;padding-bottom: 0.5rem;text-align: center;text-transform: uppercase;font-size: 15px;">
+                        Quality</h3>
+                    <p style="color: #d2d2d2;font-size: 13px;margin-top: 0.5rem;">Outstanding service for every client,
+                        guaranteed</p>
+                </div>
+                <div class="col-12 col-md-4 aos-init aos-animate text-center" data-aos="fade-up" data-aos-delay="100">
+                    <!-- Icon -->
+                    <div class="icon text-primary mb-5">
+                        <img class="img-fluid" src="{{asset('assets/images/whyc2s/selection-img.png')}}">
+                    </div>
+                    <!-- Heading -->
+                    <h3
+                        style="color: #fff;border-bottom: 1px solid #353535;padding-bottom: 0.5rem;text-align: center;text-transform: uppercase;font-size: 15px;">
+                        Selection
+                    </h3>
+                    <p style="color: #d2d2d2;font-size: 13px;margin-top: 0.5rem;">The widest variety of top services
+                        under one roof</p>
+                </div>
+                <div class="col-12 col-md-4 aos-init aos-animate text-center" data-aos="fade-up" data-aos-delay="100">
+                    <!-- Icon -->
+                    <div class="icon text-primary mb-5">
+                        <img class="img-fluid" src="{{asset('assets/images/whyc2s/myhome-img.png')}}">
+                    </div>
+                    <!-- Heading -->
+                    <h3
+                        style="font-size: 13px;color: #fff;border-bottom: 1px solid #353535;padding-bottom: 0.5rem;text-align: center;text-transform: uppercase;font-size: 15px;">
+                        MY HOME & 'OTHER SERVICES'
+                    </h3>
+                    <p style="color: #d2d2d2;font-size: 13px;margin-top: 0.5rem;">Direct interaction with local experts
+                        without intermediates </p>
+                </div>
+                <div class="col-12 col-md-4 aos-init aos-animate text-center" data-aos="fade-up" data-aos-delay="100">
+                    <!-- Icon -->
+                    <div class="icon text-primary mb-5">
+                        <img class="img-fluid" src="{{asset('assets/images/whyc2s/globalshop-img.png')}}">
+                    </div>
+                    <!-- Heading -->
+                    <h3
+                        style="color: #fff;border-bottom: 1px solid #353535;padding-bottom: 0.5rem;text-align: center;text-transform: uppercase;font-size: 15px;">
+                        One Stop Global Shop
+                    </h3>
+                    <p style="color: #d2d2d2;font-size: 13px;margin-top: 0.5rem;">All your favorite products under one
+                        roof</p>
+                </div>
+                <div class="col-12 col-md-4 aos-init aos-animate text-center" data-aos="fade-up" data-aos-delay="100">
+                    <!-- Icon -->
+                    <div class="icon text-primary mb-5">
+                        <img class="img-fluid" src="{{asset('assets/images/whyc2s/bee.png')}}" style="width:119px;">
+                    </div>
+                    <!-- Heading -->
+                    <h3
+                        style="color: #fff;border-bottom: 1px solid #353535;padding-bottom: 0.5rem;text-align: center;text-transform: uppercase;font-size: 15px;">
+                        Pro Helper
+                    </h3>
+                    <p style="color: #d2d2d2;font-size: 13px;margin-top: 0.5rem;">Trusted partner in Beauty, Wellness,
+                        Home, and Beyond... </p>
+                </div>
+                <div class="col-12 col-md-4 aos-init aos-animate text-center" data-aos="fade-up" data-aos-delay="100">
+                    <!-- Icon -->
+                    <div class="icon text-primary mb-5">
+                        <img class="img-fluid" src="{{asset('assets/images/whyc2s/saving-img.png')}}">
+                    </div>
+                    <!-- Heading -->
+                    <h3
+                        style="color: #fff;border-bottom: 1px solid #353535;padding-bottom: 0.5rem;text-align: center;text-transform: uppercase;font-size: 15px;">
+                        Savings
+                    </h3>
+                    <p style="color: #d2d2d2;font-size: 13px;margin-top: 0.5rem;">No travel fee
+                        Discounts:
+                        Shared Order
+                        Birthday
+                        Memberships
+                        Add-Ons
+                        Rewards:
+                        My Home improvements
+                        'Other Services;
+                        BeeBoutique
+                        One-Stop Global Shop</p>
+                </div>
+            </div>
+            <!-- / .row -->
+        </div>
+        <!-- / .container -->
+    </section>
+    <section id="prosbee">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 pt-5 pt-md-8 text-center">
+                    <!-- Heading -->
+                    <h2 class="fw-bold">Our <em>Bee</em>Pro Services at Your Doorstep </h2>
+                </div>
+                <div class="col-12">
+                    <!-- Flickity -->
+                    <div class="flickity-viewport-visible pt-2 pb-9"
+                        data-flickity='{"cellAlign": "left", "imagesLoaded": true, "pageDots": false, "prevNextButtons": true, "contain": true, "groupCells": 3}'>
+                        <div id="acup" class="d-block col-12 col-md-5 col-lg-4">
+                            <!-- Card -->
+                            <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fff;">
+                                <div class="card-body text-center">
+                                    <div class="img-fluid mb-5 w-100 mx-auto" style="color: #000;">
+                                        <img src="{{asset('assets/images/service-doorstep/acupuncture.jpg')}}">
+                                    </div>
+                                    <!-- Text -->
+                                    <p class="text-gray-700 mb-5">Effective way to get cured naturally</p>
+                                    <!-- Link -->
+                                    <a href="#!" style="color: #000;">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="barber" class="d-block col-12 col-md-5 col-lg-4">
+                            <!-- Card -->
+                            <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fff;">
+                                <div class="card-body text-center">
+                                    <!-- Icon -->
+                                    <div class="img-fluid mb-5 w-100 mx-auto" style="color: #000;">
+                                        <img src="{{asset('assets/images/service-doorstep/barber.jpg')}}">
+                                    </div>
+                                    <!-- Text -->
+                                    <p class="text-gray-700 mb-5">Great haircuts - that’s what we do </p>
+                                    <!-- Link -->
+                                    <a href="#!" style="color: #000;">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="bodytreatement" class="d-block col-12 col-md-5 col-lg-4">
+                            <!-- Card -->
+                            <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fff;">
+                                <div class="card-body text-center">
+                                    <div class="img-fluid mb-5 w-100 mx-auto" style="color: #000;">
+                                        <img
+                                            src="{{asset('assets/images/service-doorstep/body-treatement.jpg')}}">
+                                    </div>
+                                    <p class="text-gray-700 mb-5">Wrap yourself in wellness you deserve</p>
+                                    <!-- Link -->
+                                    <a href="#!" style="color: #000;">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="denti" class="d-block col-12 col-md-5 col-lg-4">
+                            <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fff;">
+                                <div class="card-body text-center">
+                                    <div class="img-fluid mb-5 w-100 mx-auto" style="color: #000;">
+                                        <img src="{{asset('assets/images/service-doorstep/dentistry.png')}}">
+                                    </div>
+                                    <p class="text-gray-700 mb-5">Caring for all your family’s dental needs</p>
+                                    <a href="#!" style="color: #000;">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="eyebro" class="d-block col-12 col-md-5 col-lg-4">
+                            <!-- Card -->
+                            <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fff;">
+                                <div class="card-body text-center">
+                                    <div class="img-fluid mb-5 w-100 mx-auto" style="color: #000;">
+                                        <img src="{{asset('assets/images/service-doorstep/eyesandlashsa.jpg')}}">
+                                    </div>
+                                    <p class="text-gray-700 mb-5">
+                                        Never underestimate the power of beautiful brows and lushes
+                                    </p>
+                                    <!-- Link -->
+                                    <a href="#!" style="color: #000;">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="face" class="d-block col-12 col-md-5 col-lg-4">
+                            <!-- Card -->
+                            <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fff;">
+                                <div class="card-body text-center">
+                                    <div class="img-fluid mb-5 w-100 mx-auto" style="color: #000;">
+                                        <img
+                                            src="{{asset('assets/images/service-doorstep/facetreatement.jpg')}}">
+                                    </div>
+                                    <!-- Text -->
+                                    <p class="text-gray-700 mb-5">Your face deserves the best care </p>
+                                    <!-- Link -->
+                                    <a href="#!" style="color: #000;">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="hair" class="d-block col-12 col-md-5 col-lg-4">
+                            <!-- Card -->
+                            <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fff;">
+                                <div class="card-body text-center">
+                                    <!-- Icon -->
+                                    <div class="img-fluid mb-5 w-100 mx-auto" style="color: #000;">
+                                        <img
+                                            src="{{asset('assets/images/service-doorstep/hairremoval.png')}}">
+                                    </div>
+                                    <!-- Text -->
+                                    <p class="text-gray-700 mb-5">Say goodbye to razors and hello to flawless Skin</p>
+                                    <!-- Link -->
+                                    <a href="#!" style="color: #000;">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="hairstyling" class="d-block col-12 col-md-5 col-lg-4">
+                            <!-- Card -->
+                            <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fff;">
+                                <div class="card-body text-center">
+                                    <!-- Icon -->
+                                    <div class="img-fluid mb-5 w-100 mx-auto" style="color: #000;">
+                                        <img src="{{asset('assets/images/service-doorstep/hairstyle.png')}}">
+                                    </div>
+                                    <!-- Text -->
+                                    <p class="text-gray-700 mb-5">Your hair beauty is our duty</p>
+                                    <!-- Link -->
+                                    <a href="#" style="color: #000;">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="infu" class="d-block col-12 col-md-5 col-lg-4">
+                            <!-- Card -->
+                            <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fff;">
+                                <div class="card-body text-center">
+                                    <!-- Icon -->
+                                    <div class="img-fluid mb-5 w-100 mx-auto" style="color: #000;">
+                                        <img src="{{asset('assets/images/service-doorstep/infusion.jpg')}}">
+                                    </div>
+                                    <p class="text-gray-700 mb-5">We deliver vitality to your body & mind</p>
+                                    <!-- Link -->
+                                    <a href="#!" style="color: #000;">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="makeup" class="d-block col-12 col-md-5 col-lg-4">
+                            <!-- Card -->
+                            <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fff;">
+                                <div class="card-body text-center">
+                                    <div class="img-fluid mb-5 w-100 mx-auto" style="color: #000;">
+                                        <img src="{{asset('assets/images/service-doorstep/makeover.png')}}">
+                                    </div>
+                                    <!-- Text -->
+                                    <p class="text-gray-700 mb-5">Nothing is perfect, but your makeup can be </p>
+                                    <!-- Link -->
+                                    <a href="#!" style="color: #000;">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="massage" class="d-block col-12 col-md-5 col-lg-4">
+                            <!-- Card -->
+                            <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fff;">
+                                <div class="card-body text-center">
+                                    <!-- Icon -->
+                                    <div class="img-fluid mb-5 w-100 mx-auto" style="color: #000;">
+                                        <img src="{{asset('assets/images/service-doorstep/massage.jpg')}}">
+                                    </div>
+                                    <!-- Text -->
+                                    <p class="text-gray-700 mb-5">Massage excellence comes with experience</p>
+                                    <!-- Link -->
+                                    <a href="#!" style="color: #000;">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="medspa" class="d-block col-12 col-md-5 col-lg-4">
+                            <!-- Card -->
+                            <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fff;">
+                                <div class="card-body text-center">
+                                    <!-- Icon -->
+                                    <div class="img-fluid mb-5 w-100 mx-auto" style="color: #000;">
+                                        <img src="{{asset('assets/images/service-doorstep/medspa.jpg')}}">
+                                    </div>
+                                    <p class="text-gray-700 mb-5">Relax, Rejuvenate, Recharge, Heal</p>
+                                    <!-- Link -->
+                                    <a href="#!" style="color: #000;">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="nailwork" class="d-block col-12 col-md-5 col-lg-4">
+                            <!-- Card -->
+                            <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fff;">
+                                <div class="card-body text-center">
+                                    <!-- Icon -->
+                                    <div class="img-fluid mb-5 w-100 mx-auto" style="color: #000;">
+                                        <img src="{{asset('assets/images/service-doorstep/nailwork.jpg')}}">
+                                    </div>
+                                    <p class="text-gray-700 mb-5">We’ll make your nail dreams come true
+                                    </p>
+                                    <!-- Link -->
+                                    <a href="#!" style="color: #000;">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="neuro" class="d-block col-12 col-md-5 col-lg-4">
+                            <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fff;">
+                                <div class="card-body text-center">
+                                    <div class="img-fluid mb-5 w-100 mx-auto" style="color: #000;">
+                                        <img src="{{asset('assets/images/service-doorstep/neuropathy.png')}}">
+                                    </div>
+                                    <p class="text-gray-700 mb-5">Say goodbye to nerve pain!</p>
+                                    <a href="#!" style="color: #000;">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="optme" class="d-block col-12 col-md-5 col-lg-4">
+                            <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fff;">
+                                <div class="card-body text-center">
+                                    <div class="img-fluid mb-5 w-100 mx-auto" style="color: #000;">
+                                        <img src="{{asset('assets/images/service-doorstep/optomerty.png')}}">
+                                    </div>
+                                    <p class="text-gray-700 mb-5">Eye care that you can trust</p>
+                                    <a href="#!" style="color: #000;">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="personal" class="d-block col-12 col-md-5 col-lg-4">
+                            <!-- Card -->
+                            <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fff;">
+                                <div class="card-body text-center">
+                                    <div class="img-fluid mb-5 w-100 mx-auto" style="color: #000;">
+                                        <img src="{{asset('assets/images/service-doorstep/prsonltrner.jpg')}}">
+                                    </div>
+                                    <!-- Text -->
+                                    <p class="text-gray-700 mb-5">Achieve your best with one-on-one expert coaching</p>
+                                    <!-- Link -->
+                                    <a href="#!" style="color: #000;">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="pet" class="d-block col-12 col-md-5 col-lg-4">
+                            <!-- Card -->
+                            <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fff;">
+                                <div class="card-body text-center">
+                                    <div class="img-fluid mb-5 w-100 mx-auto" style="color: #000;">
+                                        <img src="{{asset('assets/images/service-doorstep/petgromng.jpg')}}">
+                                    </div>
+                                    <!-- Text -->
+                                    <p class="text-gray-700 mb-5">Every pet deserves celebrity treatment</p>
+                                    <!-- Link -->
+                                    <a href="#!" style="color: #000;">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="physio" class="d-block col-12 col-md-5 col-lg-4">
+                            <!-- Card -->
+                            <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fff;">
+                                <div class="card-body text-center">
+                                    <!-- Icon -->
+                                    <div class="img-fluid mb-5 w-100 mx-auto" style="color: #000;">
+                                        <img src="{{asset('assets/images/service-doorstep/physio.jpg')}}">
+                                    </div>
+                                    <!-- Text -->
+                                    <p class="text-gray-700 mb-5">We are your neighborhood body specialists</p>
+                                    <!-- Link -->
+                                    <a href="#!" style="color: #000;">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tanni" class="d-block col-12 col-md-5 col-lg-4">
+                            <!-- Card -->
+                            <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fff;">
+                                <div class="card-body text-center">
+                                    <div class="img-fluid mb-5 w-100 mx-auto" style="color: #000;">
+                                        <img src="{{asset('assets/images/service-doorstep/tanning.jpg')}}">
+                                    </div>
+                                    <!-- Text -->
+                                    <p class="text-gray-700 mb-5">We deliver beach suntan to your doorstep without sand
+                                    </p>
+                                    <!-- Link -->
+                                    <a href="#!" style="color: #000;">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tattos" class="d-block col-12 col-md-5 col-lg-4">
+                            <!-- Card -->
+                            <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fff;">
+                                <div class="card-body text-center">
+                                    <!-- Icon -->
+                                    <div class="img-fluid mb-5 w-100 mx-auto" style="color: #000;">
+                                        <img src="{{asset('assets/images/service-doorstep/tattos.jpg')}}">
+                                    </div>
+                                    <!-- Text -->
+                                    <p class="text-gray-700 mb-5">Experience beauty handmade for life </p>
+                                    <!-- Link -->
+                                    <a href="#!" style="color: #000;">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="veter" class="d-block col-12 col-md-5 col-lg-4">
+                            <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fff;">
+                                <div class="card-body text-center">
+                                    <div class="img-fluid mb-5 w-100 mx-auto" style="color: #000;">
+                                        <img src="{{asset('assets/images/service-doorstep/veenary.jpg')}}">
+                                    </div>
+                                    <p class="text-gray-700 mb-5">A trusted partner in your pet’s well-being</p>
+                                    <a href="#!" style="color: #000;">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="yoga" class="d-block col-12 col-md-5 col-lg-4">
+                            <div class="card card-border shadow-light-lg lift lift-lg" style="border-top-color: #fff;">
+                                <div class="card-body text-center">
+                                    <div class="img-fluid mb-5 w-100 mx-auto" style="color: #000;">
+                                        <img src="{{asset('assets/images/service-doorstep/yoga-img.jpg')}}">
+                                    </div>
+                                    <p class="text-gray-700 mb-5">Journey to wellness begins with Yoga</p>
+                                    <a href="#!" style="color: #000;">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- / .row -->
+        </div>
+        <!-- / .container -->
+    </section>
+    <section id="our-services" style="background: #fff;">
+        <div class="container">
+            <div class="row pb-8 px-7">
+                <div class="col-12 pt-5 pb-5 pb-md-8 pt-md-8 text-center">
+                    <!-- Heading -->
+                    <h2 style="color: #000;" class="fw-bold">Our <u>'MY HOME'</u> Improvement Services </h2>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <!-- Item -->
+                    <div class="d-flex">
+                        <!-- Check -->
+                        <div class="badge badge-rounded-circle text-bg-success-subtles mt-1 me-4">
+                            <i class="fe fe-check"></i>
+                        </div>
+                        <!-- Text -->
+                        <a href="#">
+                            <p class="text-successs">Popular</p>
+                        </a>
+                    </div>
+                    <div class="d-flex">
+                        <!-- Check -->
+                        <div class="badge badge-rounded-circle text-bg-success-subtles mt-1 me-4">
+                            <i class="fe fe-check"></i>
+                        </div>
+                        <!-- Text -->
+                        <a href="#">
+                            <p class="text-successs" style="font-size:17px;">A/C, Heating & Ventilation </p>
+                        </a>
+                    </div>
+                    <!-- Item -->
+                    <div class="d-flex">
+                        <!-- Check -->
+                        <div class="badge badge-rounded-circle text-bg-success-subtles mt-1 me-4">
+                            <i class="fe fe-check"></i>
+                        </div>
+                        <a href="#">
+                            <p class="text-successs">Alarm & Security </p>
+                        </a>
+                    </div>
+                    <div class="d-flex">
+                        <!-- Check -->
+                        <div class="badge badge-rounded-circle text-bg-success-subtles mt-1 me-4">
+                            <i class="fe fe-check"></i>
+                        </div>
+                        <a href="#">
+                            <p class="text-successs">
+                                Appliances & Equipment
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="d-flex">
+
+                        <div class="badge badge-rounded-circle text-bg-success-subtles mt-1 me-4">
+                            <i class="fe fe-check"></i>
+                        </div>
+                        <a href="#">
+                            <p class="text-successs">
+                                Backyard & Front
+                            </p>
+                        </a>
+                    </div>
+                    <div class="d-flex">
+                        <!-- Check -->
+                        <div class="badge badge-rounded-circle text-bg-success-subtles mt-1 me-4">
+                            <i class="fe fe-check"></i>
+                        </div>
+                        <a href="#">
+                            <p class="text-successs" style="font-size: 17px;">
+                                Cleaning & Restoration
+                            </p>
+                        </a>
+                    </div>
+                    <!-- Item -->
+                    <div class="d-flex">
+                        <!-- Check -->
+                        <span class="badge badge-rounded-circle text-bg-success-subtles mt-1 me-4">
+                            <i class="fe fe-check"></i>
+                        </span>
+                        <!-- Text -->
+                        <a href="#">
+                            <p class="text-successs">
+                                Concrete & Cement
+                            </p>
+                        </a>
+                    </div>
+                    <!-- Item -->
+                    <div class="d-flex">
+                        <!-- Check -->
+                        <div class="badge badge-rounded-circle text-bg-success-subtles me-1 me-4">
+                            <i class="fe fe-check"></i>
+                        </div>
+                        <!-- Text -->
+                        <a href="#">
+                            <p class="text-successs">
+                                Doors & Window
+                            </p>
+                        </a>
+                    </div>
+
+
+                </div>
+                <div class="col-12 col-lg-3">
+
+                    <div class="d-flex">
+                        <!-- Check -->
+                        <div class="badge badge-rounded-circle text-bg-success-subtles mt-1 me-4">
+                            <i class="fe fe-check"></i>
+                        </div>
+                        <a href="#">
+                            <p class="text-successs">
+                                Electrical
+                            </p>
+                        </a>
+                    </div>
+                    <div class="d-flex">
+                        <!-- Check -->
+                        <span class="badge badge-rounded-circle text-bg-success-subtles mt-1 me-4">
+                            <i class="fe fe-check"></i>
+                        </span>
+                        <!-- Text -->
+                        <a href="#">
+                            <p class="text-successs">
+                                Flooring
+                            </p>
+                        </a>
+                    </div>
+                    <div class="d-flex">
+                        <!-- Check -->
+                        <div class="badge badge-rounded-circle text-bg-success-subtles me-1 me-4">
+                            <i class="fe fe-check"></i>
+                        </div>
+                        <!-- Text -->
+                        <a href="#">
+                            <p class="text-successs">
+                                Home Building
+                            </p>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-12 col-lg-3">
+
+                    <div class="d-flex">
+                        <!-- Check -->
+                        <div class="badge badge-rounded-circle text-bg-success-subtles me-1 me-4">
+                            <i class="fe fe-check"></i>
+                        </div>
+                        <!-- Text -->
+                        <a href="#">
+                            <p class="text-successs">
+                                Painting
+                            </p>
+                        </a>
+                    </div>
+                    <!-- Item -->
+                    <div class="d-flex">
+                        <!-- Check -->
+                        <span class="badge badge-rounded-circle text-bg-success-subtles mt-1 me-4">
+                            <i class="fe fe-check"></i>
+                        </span>
+                        <!-- Text -->
+                        <a href="#">
+                            <p class="text-successs">
+                                Plumbing </p>
+                        </a>
+                    </div>
+
+                    <div class="d-flex">
+                        <!-- Check -->
+                        <div class="badge badge-rounded-circle text-bg-success-subtles me-1 me-4">
+                            <i class="fe fe-check"></i>
+                        </div>
+                        <!-- Text -->
+                        <a href="#">
+                            <p class="text-successs">
+                                Miscellaneous
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <br>
+                <h2 style="color: #000;" class="fw-bold text-center"> Our 'Other Services' </h2>
+                <div class="col-12 col-lg-3">
+                    <!-- Item -->
+                    <div class="d-flex">
+                        <!-- Check -->
+                        <div class="badge badge-rounded-circle text-bg-success-subtles mt-1 me-4">
+                            <i class="fe fe-check"></i>
+                        </div>
+                        <!-- Text -->
+                        <a href="#">
+                            <p class="text-successs">
+                                Automotive
+                            </p>
+                        </a>
+                    </div>
+                    <!-- Item -->
+                    <div class="d-flex">
+                        <!-- Check -->
+                        <div class="badge badge-rounded-circle text-bg-success-subtles mt-1 me-4">
+                            <i class="fe fe-check"></i>
+                        </div>
+                        <a href="#">
+                            <p class="text-successs">
+                                Education
+                            </p>
+                        </a>
+                    </div>
+                    <div class="d-flex">
+                        <!-- Check -->
+                        <div class="badge badge-rounded-circle text-bg-success-subtles mt-1 me-4">
+                            <i class="fe fe-check"></i>
+                        </div>
+                        <a href="#">
+                            <p class="text-successs">
+                                Events
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="d-flex">
+                        <!-- Check -->
+                        <div class="badge badge-rounded-circle text-bg-success-subtles mt-1 me-4">
+                            <i class="fe fe-check"></i>
+                        </div>
+                        <a href="#">
+                            <p class="text-successs">
+                                Finances
+                            </p>
+                        </a>
+                    </div>
+                    <!-- Item -->
+                    <div class="d-flex">
+                        <!-- Check -->
+                        <span class="badge badge-rounded-circle text-bg-success-subtles mt-1 me-4">
+                            <i class="fe fe-check"></i>
+                        </span>
+                        <!-- Text -->
+                        <a href="#">
+                            <p class="text-successs">
+                                Insurance / Security
+                            </p>
+                        </a>
+                    </div>
+                    <!-- Item -->
+                    <div class="d-flex">
+                        <!-- Check -->
+                        <div class="badge badge-rounded-circle text-bg-success-subtles me-1 me-4">
+                            <i class="fe fe-check"></i>
+                        </div>
+                        <!-- Text -->
+                        <a href="#">
+                            <p class="text-successs">
+                                Legal
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <!-- Item -->
+                    <div class="d-flex">
+                        <!-- Check -->
+                        <span class="badge badge-rounded-circle text-bg-success-subtles mt-1 me-4">
+                            <i class="fe fe-check"></i>
+                        </span>
+                        <!-- Text -->
+                        <a href="#">
+                            <p class="text-successs">
+                                Pets
+                            </p>
+                        </a>
+                    </div>
+                    <!-- Item -->
+                    <div class="d-flex">
+                        <!-- Check -->
+                        <div class="badge badge-rounded-circle text-bg-success-subtles me-1 me-4">
+                            <i class="fe fe-check"></i>
+                        </div>
+                        <!-- Text -->
+                        <a href="#">
+                            <p class="text-successs">
+                                Real Estate
+                            </p>
+                        </a>
+                    </div>
+                    <div class="d-flex">
+                        <!-- Check -->
+                        <div class="badge badge-rounded-circle text-bg-success-subtles me-1 me-4">
+                            <i class="fe fe-check"></i>
+                        </div>
+                        <!-- Text -->
+                        <a href="#">
+                            <p class="text-successs">
+                                Technology
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <!-- Item -->
+                    <div class="d-flex">
+                        <!-- Check -->
+                        <span class="badge badge-rounded-circle text-bg-success-subtles mt-1 me-4">
+                            <i class="fe fe-check"></i>
+                        </span>
+                        <!-- Text -->
+                        <a href="#">
+                            <p class="text-successs">
+                                Travel
+                            </p>
+                        </a>
+                    </div>
+                    <!-- Item -->
+                    <div class="d-flex">
+                        <!-- Check -->
+                        <div class="badge badge-rounded-circle text-bg-success-subtles me-1 me-4">
+                            <i class="fe fe-check"></i>
+                        </div>
+                        <!-- Text -->
+                        <a href="#">
+                            <p class="text-successs">
+                                Wellness
+                            </p>
+                        </a>
+                    </div>
+                    <div class="d-flex">
+                        <!-- Check -->
+                        <div class="badge badge-rounded-circle text-bg-success-subtles me-1 me-4">
+                            <i class="fe fe-check"></i>
+                        </div>
+                        <!-- Text -->
+                        <a href="#">
+                            <p class="text-successs">
+                                Miscellaneous
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- / .row -->
+        </div>
+        <!-- / .container -->
+    </section>
+    <section style="background:#fff;">
+        <div class="container py-1" style="padding-bottom: 4rem !important;">
+            <div class="row">
+                <div class="col-12  text-center">
+                    <h2 class="fw-bold">HOME, BEAUTY & WELLNESS</h2>
+                    <h2 class="h3 mb-sm-3">Quality Products at Your Fingertip</h2>
+                </div>
+            </div>
+            <div class="row mx-lg-n4">
+                <div class="col-lg-3 col-md-6 px-lg-3">
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div>
+                                    <div class="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                                        <img src="{{asset('assets/images/quality-products/a-zicon.png')}}"
+                                            class="img-fluid iconog">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="h6">Brands</span>
+                                <span class="fs-xs dis"><a href="#">A - B</a></span>
+                                <span class="fs-xs dis"><a href="#">C - D - E</a></span>
+                                <span class="fs-xs dis"><a href="#">F - G - H</a></span>
+                                <span class="fs-xs dis"><a href="#">I - J - K</a></span>
+                                <span class="fs-xs dis"><a href="#">L - M - N</a></span>
+                                <span class="fs-xs dis"><a href="#">O - P - Q</a></span>
+                                <span class="fs-xs dis"><a href="#">R - S - T</a></span>
+                                <span class="fs-xs dis"><a href="#">U - V - W</a></span>
+                                <span class="fs-xs dis"><a href="#">X - Y - Z</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-lg-3">
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div class="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                                    <img src="{{asset('assets/images/quality-products/hair-icon.png')}}"
+                                        class="img-fluid iconog">
+                                </div>
+                            </div>
+                            <div>
+                                <span class="h6">Hair</span>
+                                <span class="fs-xs dis"><a href="#">Shampoos &amp; Conditioners</a></span>
+                                <span class="fs-xs dis"><a href="#">Styling &amp; Treatments</a></span>
+                                <span class="fs-xs dis"><a href="#">Haircare &amp; Color </a></span>
+                                <span class="fs-xs dis"><a href="#">Shaving &amp; Hair Off</a></span>
+                                <span class="fs-xs dis"><a href="#">Tools &amp; Accessories</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-lg-3">
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div class="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                                    <img src="{{asset('assets/images/quality-products/skin-icon.png')}}"
+                                        class="img-fluid iconog">
+                                </div>
+                            </div>
+                            <div>
+                                <span class="h6">Skin</span>
+                                <span class="fs-xs dis"><a href="#">Concerns &amp; Treatments</a></span>
+                                <span class="fs-xs dis"><a href="#">Cleansers &amp; Moisturizers</a></span>
+                                <span class="fs-xs dis"><a href="#">Creams &amp; Lotions</a></span>
+                                <span class="fs-xs dis"><a href="#">Serums &amp; Oils</a></span>
+                                <span class="fs-xs dis"><a href="#">Eye Care</a></span>
+                                <span class="fs-xs dis"><a href="#">Masks &amp; Scrubs</a></span>
+                                <span class="fs-xs dis"><a href="#">Sun Care</a></span>
+                                <span class="fs-xs dis"><a href="#">Tools &amp; Accessories </a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-lg-3">
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div class="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                                    <img src="{{asset('assets/images/quality-products/makeup-icon.png')}}"
+                                        class="img-fluid iconog">
+                                </div>
+                            </div>
+                            <div>
+                                <span class="h6">MakeUp & Nails</span>
+                                <span class="fs-xs dis"><a href="#">Eyes</a></span>
+                                <span class="fs-xs dis"><a href="#"> Face</a></span>
+                                <span class="fs-xs dis"><a href="#">Lips</a></span>
+                                <span class="fs-xs dis"><a href="#">Nail Care</a></span>
+                                <span class="fs-xs dis"><a href="#">Tools &amp; Accessories</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-lg-3">
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div class="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                                    <img src="{{asset('assets/images/quality-products/bath-icon.png')}}"
+                                        class="img-fluid iconog">
+                                </div>
+                            </div>
+                            <div>
+                                <span class="h6">Beth & Beauty</span>
+                                <span class="fs-xs dis"><a href="#">Bath &amp; Shower</a></span>
+                                <span class="fs-xs dis"><a href="#"> Body Care</a></span>
+                                <span class="fs-xs dis"><a href="#">Kids &amp; Baby Care</a></span>
+                                <span class="fs-xs dis"><a href="#">Tools &amp; Accessories</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-lg-3">
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div class="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                                    <img src="{{asset('assets/images/quality-products/gift-icon.png')}}"
+                                        class="img-fluid iconog">
+                                </div>
+                            </div>
+                            <div>
+                                <span class="h6">Fragrances & Gifts</span>
+                                <span class="fs-xs dis"><a href="#">4 Her &amp; Him</a></span>
+                                <span class="fs-xs dis"><a href="#">4 Baby</a></span>
+                                <span class="fs-xs dis"><a href="#">4 Teens</a></span>
+                                <span class="fs-xs dis"><a href="#">Sprays &amp; Mists</a></span>
+                                <span class="fs-xs dis"><a href="#">Perfume &amp; Cologne</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-lg-3">
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div class="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                                    <img src="{{asset('assets/images/quality-products/diet-icon.png')}}"
+                                        class="img-fluid iconog">
+                                </div>
+                            </div>
+                            <div>
+                                <span class="h6">Diet / Meals</span>
+                                <span class="fs-xs dis"><a href="#">Plant Based</a></span>
+                                <span class="fs-xs dis"><a href="#">Low Carbs</a></span>
+                                <span class="fs-xs dis"><a href="#">Gluten Free</a></span>
+                                <span class="fs-xs dis"><a href="#">Balance &amp; Diabetes</a></span>
+                                <span class="fs-xs dis"><a href="#">Weight Watcher</a></span>
+                                <span class="fs-xs dis"><a href="#">Paleo</a></span>
+                                <span class="fs-xs dis"><a href="#">Keto</a></span>
+                                <span class="fs-xs dis"><a href="#">Organic</a></span>
+                                <span class="fs-xs dis"><a href="#">Economy</a></span>
+                                <span class="fs-xs dis"><a href="#">More Options</a></span>
+                                <span class="fs-xs dis"><a href="#">Items &amp; Ingredients</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-lg-3">
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div>
+                                    <div class="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                                        <img src="{{asset('assets/images/quality-products/heath-icon.png')}}"
+                                            class="img-fluid iconog">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="h6">Health / Wellness</span>
+                                <span class="fs-xs dis"><a href="#">Life Essentials</a></span>
+                                <span class="fs-xs dis"><a href="#">Energy</a></span>
+                                <span class="fs-xs dis"><a href="#">Skin, Hair &amp; Nails</a></span>
+                                <span class="fs-xs dis"><a href="#">Weight Watcher</a></span>
+                                <span class="fs-xs dis"><a href="#">Women</a></span>
+                                <span class="fs-xs dis"><a href="#">Men</a></span>
+                                <span class="fs-xs dis"><a href="#">Kids &amp; Babies</a></span>
+                                <span class="fs-xs dis"><a href="#">Miscellaneous</a></span>
+                                <span class="fs-xs dis"><a href="#">Tools &amp; Accessories</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-lg-3">
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div>
+                                    <div class="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                                        <img src="{{asset('assets/images/quality-products/homebeauty_icon.png')}}"
+                                            class="img-fluid iconog">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="h6">Home Beauty</span>
+                                <span class="fs-xs dis"><a href="#">Décor</a></span>
+                                <span class="fs-xs dis"><a href="#">Furnishing</a></span>
+                                <span class="fs-xs dis"><a href="#">Window Treatments</a></span>
+                                <span class="fs-xs dis"><a href="#">Miscellaneous</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-lg-3">
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div>
+                                    <div class="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                                        <img src="{{asset('assets/images/quality-products/and-more.png')}}"
+                                            class="img-fluid iconog">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="h6">and More...</span>
+                                <span class="fs-xs dis"><a href="#">Website Design</a></span>
+                                <span class="fs-xs dis"><a href="#">Flowers</a></span>
+                                <span class="fs-xs dis"><a href="#">Gifts</a></span>
+                                <span class="fs-xs dis"><a href="#">Pets</a></span>
+                                <span class="fs-xs dis"><a href="#">Miscellaneous</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 px-lg-3">
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div>
+                                    <div class="icon icon-shape rounded-circle bg-warning text-white mr-4">
+                                        <img src="{{asset('assets/images/quality-products/prouser.png')}}"
+                                            class="img-fluid iconog">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="h6">PRO CORNER</span>
+                                <span class="fs-xs dis"><a href="#">Beauty</a></span>
+                                <span class="fs-xs dis"><a href="#">Health & Wellness</a></span>
+                                <span class="fs-xs dis"><a href="#">My Home</a></span>
+                                <span class="fs-xs dis"><a href="#">Miscellaneous</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background: #fff;" class="py-0 py-md-0 white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8 text-center">
+                    <!-- Heading -->
+                    <h2 class="fw-bold">Our Blog</h2>
+                </div>
+            </div>
+            <!-- / .row -->
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 d-flex">
+                    <!-- Card -->
+                    <div class="card mb-6 mb-lg-0 pt-14 overlay overlay-black overlay-30 bg-cover shadow-light-lg lift lift-lg"
+                        style="background-image: url({{asset('assets/images/blog/blog-1.jpg);')}}">
+                        <!-- Body -->
+                        <a class="card-body mt-auto" href="#!">
+                            <!-- Heading -->
+                            <h3 class="text-white">
+                                Using Unsplash to improve your listing visibility
+                            </h3>
+                            <!-- Text -->
+                            <p class="mb-0 text-white" style="font-size: 14px;">
+                                Using free stock photos of your surrounding areas can skyrocket your popularity.
+                            </p>
+                        </a>
+                        <!-- Meta -->
+                        <a class="card-meta" href="#!">
+                            <!-- Divider -->
+                            <hr class="card-meta-divider text-white text-opacity-20">
+                            <!-- Date -->
+                            <p class="h6 text-uppercase text-white text-opacity-80 mb-0 ms-auto">
+                                <time datetime="2019-05-02">Posted On May 02, 2024</time>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex">
+                    <!-- Card -->
+                    <div class="card mb-6 mb-lg-0 pt-14 overlay overlay-black overlay-30 bg-cover shadow-light-lg lift lift-lg"
+                        style="background-image: url({{asset('assets/images/blog/blog-2.jpg);')}}">
+                        <!-- Body -->
+                        <a class="card-body mt-auto" href="#!">
+                            <!-- Heading -->
+                            <h3 class="text-white">
+                                Using Unsplash to improve your listing visibility
+                            </h3>
+                            <!-- Text -->
+                            <p class="mb-0 text-white" style="font-size: 14px;">
+                                Using free stock photos of your surrounding areas can skyrocket your popularity.
+                            </p>
+                        </a>
+                        <!-- Meta -->
+                        <a class="card-meta" href="#!">
+                            <!-- Divider -->
+                            <hr class="card-meta-divider text-white text-opacity-20">
+                            <!-- Date -->
+                            <p class="h6 text-uppercase text-white text-opacity-80 mb-0 ms-auto">
+                                <time datetime="2019-05-02">Posted On May 02, 2024</time>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex">
+                    <!-- Card -->
+                    <div class="card mb-6 mb-lg-0 pt-14 overlay overlay-black overlay-30 bg-cover shadow-light-lg lift lift-lg"
+                        style="background-image: url({{asset('assets/images/blog/blog-3.jpg);')}}">
+                        <!-- Body -->
+                        <a class="card-body mt-auto" href="#!">
+                            <!-- Heading -->
+                            <h3 class="text-white">
+                                Using Unsplash to improve your listing visibility
+                            </h3>
+                            <!-- Text -->
+                            <p class="mb-0 text-white" style="font-size: 14px;">
+                                Using free stock photos of your surrounding areas can skyrocket your popularity.
+                            </p>
+                        </a>
+                        <!-- Meta -->
+                        <a class="card-meta" href="#!">
+                            <!-- Divider -->
+                            <hr class="card-meta-divider text-white text-opacity-20">
+                            <!-- Date -->
+                            <p class="h6 text-uppercase text-white text-opacity-80 mb-0 ms-auto">
+                                <time datetime="2019-05-02">Posted On May 02, 2024</time>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- / .row -->
+        </div>
+        <!-- / .container -->
+    </section>
+
+    <section class="home-testimonial" style="background: #f9f9f9;">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="fw-bold pt-5">Reviews & Ratings </h2>
+                </div>
+            </div>
+            <div class="main-gallery" style="margin-bottom: 100px;"
+                data-flickity='{"cellAlign": "left", "imagesLoaded": true, "pageDots": false, "prevNextButtons": true, "contain": true, "groupCells": 1,  "autoPlay": 4000 }'>
+                <div class="gallery-cell">
+                    <div class="testimonial">
+                        <p
+                            style="font-size:16px;font-weight: 600;margin-bottom: 6px !important;color: #a90307;border: 1px solid #cecece;width: 100px;margin: 0 auto;border-radius: 5px;">
+                            <em>Bee</em>PROs</p>
+                        <img class="testimonial-avatar"
+                            src="{{asset('assets/images/testimonial/testimonial1.png')}}">
+                        <q class="testimonial-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                            mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla."</q>
+                        <span class="testimonial-author">Joe Smith, CEO of Cubix</span>
+                    </div>
+                </div>
+                <div class="gallery-cell">
+                    <div class="testimonial">
+                        <p
+                            style="font-size:16px;font-weight: 600;margin-bottom: 6px !important;color: #a90307;border: 1px solid #cecece;width: 100px;margin: 0 auto;border-radius: 5px;">
+                            MY HOME</p>
+                        <img class="testimonial-avatar"
+                            src="{{asset('assets/images/testimonial/testimonial2.png')}}">
+                        <q class="testimonial-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                            mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla."</q>
+                        <span class="testimonial-author">Lisa Jones, Freelance Web Developer</span>
+                    </div>
+                </div>
+                <div class="gallery-cell">
+                    <div class="testimonial">
+                        <p
+                            style="font-size:16px;font-weight: 600;margin-bottom: 6px !important;color: #a90307;border: 1px solid #cecece;width: 180px;margin: 0 auto;border-radius: 5px;">
+                            OTHER SERVICES</p>
+                        <img class="testimonial-avatar"
+                            src="{{asset('assets/images/testimonial/testimonial3.png')}}">
+                        <q class="testimonial-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                            mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla."</q>
+                        <span class="testimonial-author">Ryan Waltz, Front-End Developer</span>
+                    </div>
+                </div>
+                <div class="gallery-cell">
+                    <div class="testimonial">
+                        <p
+                            style="font-size:16px;font-weight: 600;margin-bottom: 6px !important;color: #a90307;border: 1px solid #cecece;width: 100px;margin: 0 auto;border-radius: 5px;">
+                            <em>Bee</em>PROs</p>
+                        <img class="testimonial-avatar"
+                            src="{{asset('assets/images/testimonial/testimonial1.png')}}">
+                        <q class="testimonial-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                            mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla."</q>
+                        <span class="testimonial-author">Ryan Waltz, Front-End Developer</span>
+                    </div>
+                </div>
+                <div class="gallery-cell">
+                    <div class="testimonial">
+                        <p
+                            style="font-size:16px;font-weight: 600;margin-bottom: 6px !important;color: #a90307;border: 1px solid #cecece;width: 100px;margin: 0 auto;border-radius: 5px;">
+                            MY HOME</p>
+                        <img class="testimonial-avatar"
+                            src="{{asset('assets/images/testimonial/testimonial3.png')}}">
+                        <q class="testimonial-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                            mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla."</q>
+                        <span class="testimonial-author">Ryan Waltz, Front-End Developer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+    <style>
+        .fw-bold.text-uppercase.footerheading.mb-6 {
+            min-height: 38px;
+        }
+    </style>
+    <footer class="py-8 py-md-8 bg-white-200 position-relative overflow-hidden" style="background: #000;">
+        <figure class="position-absolute top-0 start-0 mt-n8 ms-n9" style="width: 100%;">
+            <svg class="fill-mode" width="775px" height="734px" viewBox="0 0 775 834"
+                style="enable-background:new 0 0 775 834; " xml:space="preserve">
+                <path
+                    d="M486.1,564.4c-3.6,2.5-7.4,4.8-11.3,6.4c-12,5.5-25.7,7.9-42.2,7.4c-30.6-1.1-65.6-12.5-102.8-24.4 c-50.7-16.2-103.3-33.4-152.5-27c-56.1,7.2-97.9,44.4-128,114l-0.4-0.2c67.5-156.1,181-119.5,281.1-87.1c37,12,72,23.2,102.5,24.3 c34.3,1.2,58.1-10.7,74.9-37.4C530.1,505,547.1,466,565,425.1C619.4,301,675.6,172.7,892.1,141.3l0.1,0.4 c-216.2,31.4-272.5,159.5-326.8,283.5c-18.1,41.1-35,79.7-57.7,115.6C501.6,550.7,494.5,558.5,486.1,564.4z">
+                </path>
+                <path
+                    d="M500.9,551.4c-43.7,31-103,15.8-165.5-0.2c-49.9-12.7-101.5-25.8-148.7-16.7c-53.3,10.5-93.2,49-121.6,118 l-0.5-0.1c15.3-37.1,33.3-64.7,55.1-84.7c19.5-17.7,41.3-28.6,66.7-33.7c47.4-9.2,99,3.9,148.9,16.6 c70.4,17.9,137.1,34.9,181.3-14.4c35.7-39.9,57.3-91.7,80.2-146.7c23.8-56.7,48.2-115.5,90.2-163.6c22.7-25.9,48.4-46.4,78.4-62.4 c33.9-18.1,72.2-30.3,117.1-37.1l0.1,0.4C695,155.3,645.2,274.5,597.1,389.7c-22.9,55-44.5,106.8-80.4,146.8 C512.3,542.4,506.6,547.3,500.9,551.4z">
+                </path>
+                <path
+                    d="M521.3,536.4c-21.9,15.5-48.4,23.4-80.8,23.8c-31.2,0.5-65.1-5.8-97.9-11.9c-49.3-9.2-100.2-18.7-145.7-6.5 c-51.1,13.7-88.9,53.7-116,122.6l-0.6-0.2c60.5-154.1,163.3-135,262.6-116.5c68.1,12.7,132.6,24.6,183.6-15.8 c48.1-38.2,71.1-100.6,95.6-166.5c20.3-55,41.4-111.6,78.3-158.1c20-25.1,42.7-44.9,69.2-60.5c30.1-17.5,64.2-29.1,104.3-35.4 l0.2,0.6c-167.2,26.3-210,141.9-251.4,253.5C598.3,431.5,575,493.8,527,532.2C525.1,533.8,523.2,535.1,521.3,536.4z">
+                </path>
+                <path
+                    d="M548.9,520.3c-4,2.9-8.2,5.6-12.6,8c-56.6,31.5-120.9,23.8-183,16.6c-51.7-6-100.4-11.8-144.6,3.2 c-49.9,16.9-85.5,57.7-111.3,128.2l-0.6-0.2c13.7-37.3,30.1-66,49.9-87.8c17.8-19.4,37.9-32.8,61.8-40.9 c44.3-15,93.1-9.3,144.9-3.2c62.1,7.2,126.3,14.8,182.8-16.6c59.6-33.2,82-104.7,105.9-180.4c17.1-54.3,34.7-110.5,67.2-156.6 c36.7-52,87.8-82.8,155.7-94l0.2,0.6c-151.9,25-187.8,139.3-222.3,250C620.4,417.6,599.4,484.5,548.9,520.3z">
+                </path>
+                <path
+                    d="M573.5,509.5c-8.2,5.8-17.4,10.7-27.7,14.6c-59.3,22-119.1,18.8-176.8,15.8c-53.2-2.8-103.3-5.3-147.1,12.5 C172.6,572.3,138.1,615.5,113,688l-0.5-0.1c25.1-72.7,59.6-115.9,108.9-136c44-18,94.2-15.3,147.6-12.6 c57.7,3,117.4,6.1,176.6-15.9c70.7-26.2,91.1-106.3,112.8-191.4c13.9-54.5,28.3-111,56.7-156.9C747,123.2,793,92.6,855.6,82l0,0.7 C716.3,106.5,687,221.4,658.9,332.2C640.4,405,622.6,474.4,573.5,509.5z">
+                </path>
+                <path
+                    d="M595.2,502.3c-11.3,8-24.6,14-40,17.4c-56.8,12.7-112,12.7-160.5,12.9c-60.2,0.1-112,0.2-157,21.1 c-49.5,23-84,69.3-108.5,146l-0.6-0.2c24.3-76.7,58.9-123.1,108.6-146.3c45.1-21.1,97.2-21.1,157.4-21.2 c48.6,0,103.6-0.1,160.5-12.9c81.6-18.3,99-106.7,117.4-200.6c10.7-55,22-112,46.6-158.2C747,108,788.6,77.5,846.5,67.2l0.1,0.8 C718,91.2,695.2,206.9,673.2,318.9C658.3,394.9,643.8,467.8,595.2,502.3z">
+                </path>
+                <path
+                    d="M615.3,497.4c-13.7,9.7-30.2,16-50.8,18c-44.4,4.6-86.5,5.8-123.6,6.8c-71.2,2-132.8,3.7-182,27.7 C206,575.6,169.8,627,145,711.3l-0.8-0.1c13-44.6,29-79.3,48.6-106.3c18.1-24.9,39.5-43.1,65.6-55.7 c49.5-24.1,110.9-25.8,182.4-27.7c37.1-1,79.3-2.2,123.5-6.7c92.6-9.4,106.2-106.5,120.5-209.2c7.8-55.9,15.9-113.6,37-160 c23.8-52.7,61.6-83.1,115.3-93.4l0.3,0.7c-53.4,10.1-91,40.4-114.6,92.9c-21.1,46.4-29.2,104.1-36.8,159.9 C674.6,386,663.8,463,615.3,497.4z">
+                </path>
+                <path
+                    d="M634.4,494c-15.5,11-35.2,17.2-60.4,17.3c-12.3,0.1-24.5,0.1-36.1,0.1c-103.7,0-185.5-0.1-246.4,26.4 c-63.5,27.7-103.7,85-130.5,185.5l-0.8-0.1c13.9-52.5,31.3-92.6,53.2-122.9c20.7-28.8,46.2-49.4,77.8-63.2 c61-26.6,142.9-26.4,246.6-26.4c11.7,0.1,23.8,0,36.1-0.1c103.8-0.2,112.9-105.6,122.5-217.2c4.7-56.9,9.9-115.5,27.5-162.4 c20-53.1,54.1-83.7,104.1-93.7l0.1,0.8c-49.5,9.8-83.5,40.3-103.3,93.1c-17.6,46.9-22.7,105.4-27.6,162 C690.1,378.2,682.9,459.6,634.4,494z">
+                </path>
+                <path
+                    d="M652.7,491.8c-17.9,12.7-40.7,17.7-69.2,15.4C328,486.2,228.3,517.5,177.2,735.2l-0.9-0.3 c25.9-110.7,64-171.6,127-204c66.6-34.2,160.2-34.6,280.3-24.7c32.2,2.6,56.9-4.1,75.4-20.5c42.1-37.4,45.1-118.6,48-204.7 c4-116.5,8.1-236.8,112.1-258.6l0.1,0.8C715.9,44.8,711.8,164.8,707.8,280.9c-3.1,86.3-5.8,167.7-48.3,205.2 C657.3,488.3,655,490.1,652.7,491.8z">
+                </path>
+                <path
+                    d="M670.6,490.3c-19.3,13.7-44.8,17.9-77.7,12.7c-138.5-21.4-227.1-13-287.3,27 c-55.4,36.8-89.1,101.7-112.4,216.9l-0.9-0.3C215.8,631,249.6,566,305.1,528.9c60.3-40.1,149.1-48.6,288.1-27.3 c35.9,5.5,63,0,82.6-16.9c43.2-37.5,42.2-124.3,40.9-216.1C714.9,151,713,28.8,809.9,7.7l0.1,0.8c-96,21.1-94.3,142.7-92.7,260.6 c1.3,92.1,2.4,179-41.1,216.7C674.3,487.4,672.6,488.9,670.6,490.3z">
+                </path>
+            </svg>
+        </figure>
+        <div class="containers mt-5">
+            <div class="row g-4 justify-content-between">
+
+                <div class="col-lg-12 col-xxl-12">
+                    <div class="row g-4">
+                        <!-- Link block -->
+                        <div class="col-6 col-md-2">
+                            <!-- Heading -->
+                            <h6 class="fw-bold text-uppercase footerheading mb-6">
+                                <em class="text-capitalize">Bee</em>PRO
+                            </h6>
+
+                            <!-- List -->
+                            <ul class="list-unstyled mb-6 mb-md-8 mb-lg-0">
+                                <li class="mb-1"><a href="#" class="text-reset">Overview </a></li>
+                                <li class="mb-1"><a href="javascript:void();" class="text-reset"><u>Services</u><button
+                                            class="dhows" id="button3">Show</button> </a></li>
+                                <span id="submenus3">
+                                    <li class="mb-1"><a class="text-reset" href="#">Acupuncture</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Barbar</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Body Treatment</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Dentistry</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Eyebrows & Lushes</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Face Treatment</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Hair Removal</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Hairstyling</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Infusion Therapy</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Makeup & Makeover</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Massage</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Med Spa</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Nail Work</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Neuropathy Therapy</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Optometry</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Personal Trainer</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Pet Grooming</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Physiotherapy</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Tanning</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Tattoo & Piercing</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Veterinary</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Yoga</a></li>
+                                </span>
+                                <li class="mb-1"><a href="#" class="text-reset">FAQ </a></li>
+                                <li class="mb-1"><a href="#" class="text-reset">Blog </a></li>
+                                <li class="mb-1"><a href="#" class="text-reset"><em>Bee</em>Card </a></li>
+                                <li class="mb-1"><a href="#" class="text-reset"><em>Bee</em>Boutique </a></li>
+                                <li class="mb-1"><a href="#" class="text-reset">Reviews </a></li>
+                                <li class="mb-1"><a href="#" target="_blank" class="text-reset">- Become
+                                        <u><em>Bee</em>Pro</u> </a></li>
+
+
+                            </ul>
+                        </div>
+
+                        <!-- Link block -->
+                        <div class="col-6 col-md-2">
+                            <h6 class="fw-bold text-uppercase footerheading mb-6"><u>MY HOME</u> &<br>Other Services
+                            </h6>
+
+                            <!-- List -->
+                            <ul class="list-unstyled mb-6 mb-md-8 mb-lg-0">
+                                <li class="mb-1"><a href="#" class="text-reset">Who We Are </a></li>
+                                <li class="mb-1"><a href="#" class="text-reset">Why Choose Us </a></li>
+                                <li class="mb-2"><a href="#" class="text-reset"><u>Services MH</u><button class="dhows"
+                                            id="button1">Show</button> </a></li>
+                                <span id="submenus1">
+                                    <li class="mb-1"><a class="text-reset" href="#">Popular</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">A/C, Heating & Ventilation</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Alarm & Security</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Appliances & Equipment</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Backyard & Front</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Cleaning & Restoration</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Concrete & Cement</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Doors & Window</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Electrical</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Flooring</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Home Building</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Painting</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Plumbing</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Miscellaneous</a></li>
+
+                                </span>
+                                <h6 class="footerheading mb-0" style="color: #bfbfbf ;"><u>Services OS</u><button
+                                        class="dhows" id="button2">Show</button></h6>
+                                <span id="submenus2">
+                                    <li class="mb-1"><a class="text-reset" href="#">Automotive</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Education</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Events</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Finances</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Insurance / Security</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Legal</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Pets</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Real Estate</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Technology</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Travel</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Wellness</a></li>
+                                    <li class="mb-1"><a class="text-reset" href="#">Miscellaneous</a></li>
+                                </span>
+
+                                <li class="mb-1"><a href="#" class="text-reset">FAQs (MH / OS) </a></li>
+                                <li class="mb-1"><a href="#" class="text-reset">Blog </a></li>
+                                <li class="mb-1"><a href="#" class="text-reset">Customer Helper </a></li>
+                                <li class="mb-1"><a href="#" class="text-reset">Reviews</a></li>
+                                <li class="mb-1"><a href="#" target="_blank" class="text-reset">- Become <u>MH</u> &
+                                        OS</a> </li>
+                            </ul>
+                        </div>
+
+
+
+                        <div class="col-6 col-md-2">
+                            <h6 class="fw-bold text-uppercase footerheading mb-6">ONE-STOP <br>GLOBAL SHOP</h6>
+
+                            <!-- List -->
+                            <ul class="list-unstyled mb-6 mb-md-8 mb-lg-0">
+                                <li class="mb-1"><a href="#" class="text-reset">A-Z brands</a></li>
+                                <li class="mb-1"><a href="#" class="text-reset">Hair</a></li>
+                                <li class="mb-1"><a href="#" class="text-reset">Skin</a></li>
+                                <li class="mb-1"><a href="#" class="text-reset">Makeup </a></li>
+                                <li class="mb-1"><a href="#" class="text-reset">Beth & Beauty </a></li>
+                                <li class="mb-1"><a href="#" class="text-reset">Fragrances & Gifts</a></li>
+                                <li class="mb-1"><a href="#" class="text-reset">Diet & Meals</a></li>
+                                <li class="mb-1"><a href="#" class="text-reset">Health & Wellness</a></li>
+                                <li class="mb-1"><a href="#" class="text-reset">Home Beauty</a></li>
+                                <li class="mb-1"><a href="#" class="text-reset">and More </a></li>
+                                <li class="mb-1"><a href="#" class="text-reset">Pro Corner </a></li>
+                                <li class="mb-1"><a href="#" class="text-reset">Reviews</a></li>
+                                <li class="mb-1"><a href="#" class="text-reset">- Become <u>OSGS</u> Affiliate</a> </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <h6 class="fw-bold text-uppercase footerheading mb-6">POLICIES </h6>
+
+                            <!-- List -->
+                            <ul class="list-unstyled mb-6 mb-md-8 mb-lg-0">
+                                <li class="mb-1"><a href="#" class="text-reset">Pros & Clients </a></li>
+                                <li class="mb-1"><a href="#" class="text-reset">Products & Services</a></li>
+                                <li class="mb-1"><a href="#" class="text-reset">Advertisers & Visitors</a></li>
+                                <li class="mb-1"><a href="#" class="text-reset">Screening & Safety</a></li>
+                                <li class="mb-1"><a href="#" class="text-reset"><em>Bee</em>Card</a></li>
+                                <li class="mb-1"><a href="#" class="text-reset">Affiliate Disclaimer</a></li>
+                                <li class="mb-1"><a href="#" class="text-reset">Do Not Sell </a></li>
+                                <li class="mb-1"><a href="#" class="text-reset">Contact Us</a> </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-md-3" style="border-left: 1px solid #262626;padding-left: 1.5rem;">
+                            <h6 class="fw-bold text-uppercase footerheading mb-6">Contacts </h6>
+
+                            <!-- List -->
+                            <ul class="list-unstyled mb-6 mb-md-8 mb-lg-0">
+
+                                <li class="mb-4 text-textx">Ph. # 1.310. 340-0055</li>
+                                <li class="mb-4"><a href="mailto:info@cut2style.com" target="_blank"
+                                        class="text-reset">info@cut2style.com </a></li>
+                                <li class="mb-1 text-textx">8888 W. 3rd. St. Unit #301</li>
+                                <li class="mb-6  text-textx">Los Angeles, CA 90048 (USA)</li>
+
+                            </ul>
+                            <h6 class="fw-bold text-uppercase footerheading mb-1">Social Media </h6>
+
+                            <!-- List -->
+                            <ul class="list-unstyled mb-6 mb-md-8 mb-lg-0">
+
+                                <li class="list-inline-item list-social-item me-1">
+                                    <a href="#!" class="text-decoration-none">
+                                        <img src="{{asset('assets/images/footer/social/facebook.svg')}}"
+                                            class="list-social-icon" alt="...">
+                                    </a>
+                                </li>
+                                <li class="list-inline-item list-social-item me-1">
+                                    <a href="#!" class="text-decoration-none">
+                                        <img src="{{asset('assets/images/footer/social/twitter.svg')}}"
+                                            class="list-social-icon" alt="...">
+                                    </a>
+                                </li>
+                                <li class="list-inline-item list-social-item me-1">
+                                    <a href="#!" class="text-decoration-none">
+                                        <img src="{{asset('assets/images/footer/social/youtube.svg')}}"
+                                            class="list-social-icon" alt="...">
+                                    </a>
+                                </li>
+                                <li class="list-inline-item list-social-item me-1">
+                                    <a href="#!" class="text-decoration-none">
+                                        <img src="{{asset('assets/images/footer/social/instagram.svg')}}"
+                                            class="list-social-icon" alt="...">
+                                    </a>
+                                </li>
+                                <li class="list-inline-item list-social-item me-1">
+                                    <a href="#!" class="text-decoration-none">
+                                        <img src="{{asset('assets/images/footer/social/pinterest.svg')}}"
+                                            class="list-social-icon" alt="...">
+                                    </a>
+                                </li>
+                                <li class="list-inline-item list-social-item">
+                                    <a href="#!" class="text-decoration-none">
+                                        <img src="{{asset('assets/images/footer/social/linkedin.svg')}}"
+                                            class="list-social-icon" alt="...">
+                                    </a>
+                                </li>
+
+                            </ul>
+                            <ul class="list-unstyled mb-6 mb-md-8 mb-lg-0 pt-6">
+                                <h6 class="text-uppercase footerheading mt-3 mb-2" id="app-logo">
+                                    <img src="{{asset('assets/images/footer/download-app.png')}}"
+                                        alt="logo" style="width: 45px;border-radius: 4px; margin-right: 8px;">
+                                    Download App
+                                </h6>
+                                <a href="#" target="_blank"><img
+                                        src="{{asset('assets/images/footer/appstore.png')}}"
+                                        class="imageapp pb-2"> </a>
+                                <a href="#" target="_blank"><img
+                                        src="{{asset('assets/images/footer/playstore.png')}}"
+                                        class="imageapp"> </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <hr class="mt-9 mb-0" style="color: #262626;">
+
+                <div class="d-md-flex justify-content-between align-items-center text-center text-lg-start py-4">
+                    <!-- copyright text -->
+                    <div class="text-body" style="font-size: 13px;color: #5c5c5c !important;"> Copyrights &copy;2025
+                        Cut2Style.com. &nbsp;&nbsp;&nbsp;&nbsp;<a
+                            href="#" class="text-body text-primary-hover"
+                            style="color:#8f8f8f !important;">Privacy Policy</a> |
+                        <a href="#" class="text-body text-primary-hover" style="color:#8f8f8f !important;">Terms &
+                            Conditions</a> |
+                        <a href="#" class="text-body text-primary-hover" style="color:#8f8f8f !important;">Cards</a>
+                    </div>
+                    <!-- copyright links-->
+
+                </div>
+            </div>
+            <!-- / .row -->
+        </div>
+        <!-- / .container -->
+    </footer>
+
+    <script type='text/javascript'>
+        (function () {
+            var c = document.body.className;
+            c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+            document.body.className = c;
+        })();
+    </script>
+    <link rel='stylesheet' id='wc-blocks-style-css'
+        href='{{asset('web-assets/css/plugins/woocommerce/wc-blocks.verwc-9.7.1.css')}}'
+        type='text/css' media='all' />
+    <script type="text/javascript"
+        src="{{asset('web-assets/js/hooks.min.js')}}"
+        id="wp-hooks-js"></script>
+    <script type="text/javascript"
+        src="{{asset('web-assets/js/i18n.min.js')}}"
+        id="wp-i18n-js"></script>
+    <script type="text/javascript" id="wp-i18n-js-after">
+        /* <![CDATA[ */
+        wp.i18n.setLocaleData({ 'text direction\u0004ltr': ['ltr'] });
+        /* ]]> */
+    </script>
+    <script type="text/javascript"
+        src="{{asset('web-assets/js/plugins/contact-form-7/swv/index.ver6.0.5.js')}}"
+        id="swv-js"></script>
+    <script type="text/javascript" id="contact-form-7-js-before">
+        /* <![CDATA[ */
+        var wpcf7 = {
+            "api": {
+                "root": "https:\/\/demo.cut2style.com\/wp-json\/",
+                "namespace": "contact-form-7\/v1"
+            }
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript"
+        src="{{asset('web-assets/js/plugins/contact-form-7/index.ver6.0.5.js')}}"
+        id="contact-form-7-js"></script>
+    <script type="text/javascript" id="rtrar.appLocal-js-extra">
+        /* <![CDATA[ */
+        var rtafr = { "rules": "" };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" id="twentyseventeen-skip-link-focus-fix-js-extra">
+        /* <![CDATA[ */
+        var twentyseventeenScreenReaderText = { "quote": "<svg class=\"icon icon-quote-right\" aria-hidden=\"true\" role=\"img\"> <use href=\"#icon-quote-right\" xlink:href=\"#icon-quote-right\"><\/use> <\/svg>" };
+        /* ]]> */
+    </script>
+    <script type="text/javascript"
+        src="{{asset('web-assets/js/plugins/woocommerce/sourcebuster/sourcebuster.ver9.7.1.min.js')}}"
+        id="sourcebuster-js-js"></script>
+    <script type="text/javascript" id="wc-order-attribution-js-extra">
+        /* <![CDATA[ */
+        var wc_order_attribution = { "params": { "lifetime": 1.0000000000000000818030539140313095458623138256371021270751953125e-5, "session": 30, "base64": false, "ajaxurl": "https:\/\/demo.cut2style.com\/wp-admin\/admin-ajax.php", "prefix": "wc_order_attribution_", "allowTracking": true }, "fields": { "source_type": "current.typ", "referrer": "current_add.rf", "utm_campaign": "current.cmp", "utm_source": "current.src", "utm_medium": "current.mdm", "utm_content": "current.cnt", "utm_id": "current.id", "utm_term": "current.trm", "utm_source_platform": "current.plt", "utm_creative_format": "current.fmt", "utm_marketing_tactic": "current.tct", "session_entry": "current_add.ep", "session_start_time": "current_add.fd", "session_pages": "session.pgs", "session_count": "udata.vst", "user_agent": "udata.uag" } };
+        /* ]]> */
+    </script>
+    <script type="text/javascript"
+        src="{{asset('web-assets/js/plugins/woocommerce/order-attribution.ver9.7.1.min.js')}}"
+        id="wc-order-attribution-js"></script>
+    <script type="text/javascript"
+        src="{{asset('web-assets/js/plugins/real-time-auto-find-and-replace/rtafar.ver1.7.0.app.min.js')}}"
+        id="rtrar.app-js"></script>
+
+    <!-- Vendor JS  -->
+    <script src="{{asset('web-assets/js/themes/vendor.bundle.js')}}"></script>
+
+    <!-- Theme JS -->
+    <script src="{{asset('web-assets/js/themes/theme.bundle.js')}}"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#submenus1").hide();
+            $("#button1").click(function () {
+                $("#submenus1").slideToggle();
+            });
+            $("#submenus2").hide();
+            $("#button2").click(function () {
+                $("#submenus2").slideToggle();
+            });
+            $("#submenus3").hide();
+            $("#button3").click(function () {
+                $("#submenus3").slideToggle();
+            });
+        });
+    </script>
+</body>
 </html>
