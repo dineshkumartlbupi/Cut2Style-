@@ -36,7 +36,8 @@
                             <h1 class="mb-1 h2 fw-bold">Sign Up</h1>
                         </div>
                         <!-- form -->
-                        <form name="loginFrm" class="needs-validation" method="post">
+                        <form name="loginFrm" class="needs-validation" method="post" action="{{ route('registerUser') }}">
+                            @csrf
                             <div class="row g-3">
                                 <!-- col -->
                                 <div class="col-12">
@@ -58,7 +59,7 @@
                                     <!-- input -->
                                     <label for="formSignuprole" class="form-label visually-hidden">role
                                         address</label>
-                                    <select type="email" name="email" class="form-control" id="formSignuprole"
+                                    <select type="email" name="role" class="form-control" id="formSignuprole"
                                         placeholder="role" required >
                                         <option value="" selected disabled>Select Role</option>
                                         <option value="Admin">Admin</option>
@@ -80,7 +81,7 @@
                                     </div>
                                 </div>
                                 <!-- btn -->
-                                <div class="col-12 d-grid"><button type="submit" class="btn btn-primary">Login</button>
+                                <div class="col-12 d-grid"><button type="submit" class="btn btn-primary">Submit</button>
                                 </div>
                             </div>
                         </form>
